@@ -1,10 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  output: "standalone",
-  distDir: "build",
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
-};
+const nextConfig = {};
 
 module.exports = nextConfig;
