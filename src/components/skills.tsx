@@ -31,12 +31,12 @@ export default function SkillsContent() {
     <>
       <Subtitle subtitle={lang === "en" ? "Tools" : "Ferramentas"} />
       <motion.div
-        className="grid grid-cols-4 h-fit mb-12 mt-4 sm:w-3/5 w-full bg-white bg-opacity-60 sm:rounded-lg sm:p-6 sm:text-base"
+        className="flex h-fit mb-12 mt-4 sm:w-3/5 w-full bg-white bg-opacity-60 sm:rounded-lg sm:p-6 sm:text-base"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.3, duration: 0.4 }}
       >
-        <div className="h-full w-full flex flex-col justify-center items-center text-gray-800">
+        <div className="h-full w-1/4 flex flex-col justify-center items-center text-gray-800">
           <div className="flex sm:w-4/5 w-[95%] sm:text-lg h-10 items-center justify-start sm:gap-3 gap-1 text-xs">
             <SiTypescript className="text-base sm:text-lg"/>
             <p>TypeScript</p>
@@ -58,7 +58,7 @@ export default function SkillsContent() {
             <p>React.js</p>
           </div>
         </div>
-        <div className="h-full w-full flex flex-col justify-center items-center text-gray-800 border-l-2 border-r-2 border-slate-700">
+        <div className="h-full w-1/4 flex flex-col justify-center items-center text-gray-800 border-l-2 border-r-2 border-slate-700">
           <div className="flex sm:w-4/5 w-[95%] sm:text-lg h-10 items-center justify-start sm:gap-3 gap-1 text-xs">
             <SiNestjs className="text-base sm:text-lg"/>
             <p>Nest.js</p>
@@ -80,7 +80,7 @@ export default function SkillsContent() {
             <p>MongoDB</p>
           </div>
         </div>
-        <div className="h-full w-full flex flex-col justify-center items-center text-gray-800 border-r-2 border-slate-700">
+        <div className="h-full w-1/4 flex flex-col justify-center items-center text-gray-800 border-r-2 border-slate-700">
           <div className="flex sm:w-4/5 w-[95%] sm:text-lg h-10 items-center justify-start sm:gap-3 gap-1 text-xs">
             <SiPostgresql className="text-base sm:text-lg"/>
             <p>PostgreSQL</p>
@@ -102,7 +102,7 @@ export default function SkillsContent() {
             <p>Docker</p>
           </div>
         </div>
-        <div className="h-full w-full flex flex-col justify-center items-center text-gray-800">
+        <div className="h-full w-1/4 flex flex-col justify-center items-center text-gray-800">
           <div className="flex sm:w-4/5 w-[95%] sm:text-lg h-10 items-center justify-start sm:gap-3 gap-1 text-xs">
             <SiAmazonaws className="text-base sm:text-lg"/>
             <p>AWS</p>

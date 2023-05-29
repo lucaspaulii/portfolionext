@@ -67,7 +67,7 @@ export default function About() {
           ) : (
             <button
               onClick={() => handleClick()}
-              className="group p-3 bg-white bg-opacity-20 hover:scale-110  transition-all duration-[100ms] flex items-center gap-2 w-fit"
+              className="group p-3 bg-white bg-opacity-20 hover:scale-110  transition-all duration-[100ms] flex items-center gap-2 w-fit mb-5"
             >
               {lang === "en" ? "Show More" : "Veja Mais"} <RiArrowDownSLine className="transition-all duration-[100ms] group-hover:scale-[135%] group-hover:translate-y-[0.2rem]"/>
             </button>
