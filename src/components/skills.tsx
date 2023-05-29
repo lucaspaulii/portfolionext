@@ -31,7 +31,7 @@ export default function SkillsContent() {
     <>
       <Subtitle subtitle={lang === "en" ? "Tools" : "Ferramentas"} />
       <motion.div
-        className="grid grid-cols-4 mb-12 mt-4 sm:w-3/5 w-full bg-white bg-opacity-60 sm:rounded-lg sm:p-6 sm:text-base"
+        className="grid grid-cols-4 h-fit mb-12 mt-4 sm:w-3/5 w-full bg-white bg-opacity-60 sm:rounded-lg sm:p-6 sm:text-base"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.3, duration: 0.4 }}
