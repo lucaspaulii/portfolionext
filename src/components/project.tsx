@@ -29,7 +29,7 @@ export default function Project(props: project) {
           opacity: 0,
         }}
         whileInView={{ translateX: "4rem", opacity: 1 }}
-        transition={{ delay: 0.3, duration: 0.1 }}
+        transition={{ delay: 0.3, duration: 0.4 }}
       >
         <div className="flex h-fit min-h-[9rem] w-full bg-white bg-opacity-70 rounded-t-lg">
           <div className="h-100 w-1/5 flex items-center">
