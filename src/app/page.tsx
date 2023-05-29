@@ -18,7 +18,7 @@ export default function Home() {
 
   return (
     <main className="h-screen  w-screen bg-gradient-to-tr from-blue-900 from-10% via-gray-900 via-80% to-blue-950 text-white box-border absolute">
-      <Image src="/bg3.jpg" alt="bg" fill />
+      <Image src="/bg3.jpg" alt="bg" fill placeholder="blur" priority={true} blurDataURL="/bgblur.png"/>
       <motion.div
         className="flex flex-col items-center justify-center h-full w-full sm:pt-20 pb-32 overflow-hidden"
         initial={{ translateX: prevPage == "about" ? "-70vw" : "0" }}

@@ -34,7 +34,7 @@ import VideoModal from "@/components/videoModal";
 export default function Projects() {
   const { setPageData, pageData } = useContext(PageContext);
   const { lang } = useContext(LangContext);
-  const [video, setVideo] = useState(false)
+  const [video, setVideo] = useState(false);
   const prevPage = pageData;
 
   useEffect(() => {
@@ -43,7 +43,7 @@ export default function Projects() {
 
   return (
     <main className="h-screen w-screen bg-gradient-to-tr from-blue-900 via-gray-900 to-purple-900 text-white flex flex-col items-center overflow-hidden">
-      <Image src="/bg3.jpg" alt="bg" fill />
+      <Image src="/bg3.jpg" alt="bg" fill placeholder="blur" priority={true} blurDataURL="/bgblur.png"/>
       <div className="w-full h-screen overflow-y-scroll overflow-x-hidden sm:scrollbar-track-neutral-600 sm:scrollbar-thumb-gray-950 z-30 scrollbar-none">
         <motion.div
           className="w-screen h-fit flex flex-col items-center gap-8 sm:pt-28 pt-[5.5rem] sm:pb-44 pb-5 box-border"
@@ -57,9 +57,11 @@ export default function Projects() {
           </h1>
           <Project
             name="Musichems"
-            description={lang === "en" ? projectsTxtEng.musichems : projectsTxtPt.musichems}
+            description={
+              lang === "en" ? projectsTxtEng.musichems : projectsTxtPt.musichems
+            }
             buttons={{
-              "demo video": (lang === "en" ? "vqvXGUABWpI" : "tDw20q_sSZ4"),
+              "demo video": lang === "en" ? "vqvXGUABWpI" : "tDw20q_sSZ4",
               "front-end repo":
                 "https://www.github.com/lucaspaulii/musichem-front",
               "back-end repo": "https://github.com/lucaspaulii/musichem-back",
@@ -76,7 +78,7 @@ export default function Projects() {
               <SiMongodb />,
               <SiDocker />,
               <SiAmazonaws />,
-              <SiGithubactions />
+              <SiGithubactions />,
             ]}
             direction="r"
             imageDesktopSrc={"/laptop_musichems.png"}
@@ -85,11 +87,12 @@ export default function Projects() {
           />
           <Project
             name="Drivent"
-            description={lang === "en" ? projectsTxtEng.drivent : projectsTxtPt.drivent}
+            description={
+              lang === "en" ? projectsTxtEng.drivent : projectsTxtPt.drivent
+            }
             buttons={{
-              "demo video": (lang === "en" ? "aCFD1ue7kRo" : "rHFszFrL6L8"),
-              "front-end repo":
-                "https://github.com/drivent-proj/drivent-front",
+              "demo video": lang === "en" ? "aCFD1ue7kRo" : "rHFszFrL6L8",
+              "front-end repo": "https://github.com/drivent-proj/drivent-front",
               "back-end repo": "https://github.com/drivent-proj/drivent-back",
             }}
             technologies={[
@@ -101,7 +104,7 @@ export default function Projects() {
               <SiExpress />,
               <SiPrisma />,
               <SiPostgresql />,
-              <SiRedis/>,
+              <SiRedis />,
               <SiJest />,
             ]}
             direction="l"
@@ -110,11 +113,12 @@ export default function Projects() {
           />
           <Project
             name="WallEt"
-            description={lang === "en" ? projectsTxtEng.wallet : projectsTxtPt.wallet}
+            description={
+              lang === "en" ? projectsTxtEng.wallet : projectsTxtPt.wallet
+            }
             buttons={{
-              "demo video": (lang === "en" ? "3sJqfX1HNm0" : "e-Kky-7xEww"),
-              "front-end repo": 
-                "https://github.com/lucaspaulii/wall.et_front",
+              "demo video": lang === "en" ? "3sJqfX1HNm0" : "e-Kky-7xEww",
+              "front-end repo": "https://github.com/lucaspaulii/wall.et_front",
               "back-end repo": "https://github.com/lucaspaulii/wall.et_back",
             }}
             technologies={[
@@ -132,12 +136,15 @@ export default function Projects() {
           />
           <Project
             name="Linkr"
-            description={lang === "en" ? projectsTxtEng.linkr : projectsTxtPt.linkr}
+            description={
+              lang === "en" ? projectsTxtEng.linkr : projectsTxtPt.linkr
+            }
             buttons={{
-              "demo video": (lang === "en" ? "ON86VCPCNQ0" : "zmik5uDY1Vg"),
+              "demo video": lang === "en" ? "ON86VCPCNQ0" : "zmik5uDY1Vg",
               "front-end repo":
                 "https://github.com/devgalindo/projeto18-linkr-front",
-              "back-end repo": "https://github.com/devgalindo/projeto18-linkr-back",
+              "back-end repo":
+                "https://github.com/devgalindo/projeto18-linkr-back",
             }}
             technologies={[
               <SiJavascript />,
@@ -151,14 +158,17 @@ export default function Projects() {
             imageDesktopSrc={"/laptop_linkr.png"}
             setVideo={setVideo}
           />
-           <Project
+          <Project
             name="Prima Fiat"
-            description={lang === "en" ? projectsTxtEng.primafiat : projectsTxtPt.primafiat}
+            description={
+              lang === "en" ? projectsTxtEng.primafiat : projectsTxtPt.primafiat
+            }
             buttons={{
-              "demo video": (lang === "en" ? "Dbl6KQPmkBU" : "7yvhvJX4IXQ"),
+              "demo video": lang === "en" ? "Dbl6KQPmkBU" : "7yvhvJX4IXQ",
               "front-end repo":
                 "https://github.com/lucaspaulii/prima-fiat-front",
-              "back-end repo": "https://github.com/lucaspaulii/prima-fiat-backend",
+              "back-end repo":
+                "https://github.com/lucaspaulii/prima-fiat-backend",
             }}
             technologies={[
               <SiTypescript />,
@@ -174,9 +184,11 @@ export default function Projects() {
             imageDesktopSrc={"/laptop_prima_hq.png"}
             setVideo={setVideo}
           />
-           <Project
+          <Project
             name="Shortly"
-            description={lang === "en" ? projectsTxtEng.shortly : projectsTxtPt.shortly}
+            description={
+              lang === "en" ? projectsTxtEng.shortly : projectsTxtPt.shortly
+            }
             buttons={{
               "back-end repo": "https://github.com/lucaspaulii/shortly",
             }}
@@ -192,11 +204,12 @@ export default function Projects() {
           />
           <Project
             name="LaCopa Store"
-            description={lang === "en" ? projectsTxtEng.lacopa : projectsTxtPt.lacopa}
+            description={
+              lang === "en" ? projectsTxtEng.lacopa : projectsTxtPt.lacopa
+            }
             buttons={{
-              "demo video": (lang === "en" ? "HQPKzaQXw9w" : "69fDkC1n6UA"),
-              "front-end repo":
-                "https://github.com/lucaspaulii/lacopa-front",
+              "demo video": lang === "en" ? "HQPKzaQXw9w" : "69fDkC1n6UA",
+              "front-end repo": "https://github.com/lucaspaulii/lacopa-front",
               "back-end repo": "https://github.com/lucaspaulii/lacopa-back",
             }}
             technologies={[
@@ -213,11 +226,12 @@ export default function Projects() {
           />
           <Project
             name="Cineflex"
-            description={lang === "en" ? projectsTxtEng.cineflex : projectsTxtPt.cineflex}
+            description={
+              lang === "en" ? projectsTxtEng.cineflex : projectsTxtPt.cineflex
+            }
             buttons={{
-              "demo video": (lang === "en" ? "5kwv9E1DZUg" : "euGMmi5WFGM"),
-              "front-end repo":
-                "https://github.com/lucaspaulii/cineflex",
+              "demo video": lang === "en" ? "5kwv9E1DZUg" : "euGMmi5WFGM",
+              "front-end repo": "https://github.com/lucaspaulii/cineflex",
             }}
             technologies={[
               <SiJavascript />,
@@ -231,17 +245,15 @@ export default function Projects() {
           />
           <Project
             name="Parrots Card Game"
-            description={lang === "en" ? projectsTxtEng.parrots : projectsTxtPt.parrots}
+            description={
+              lang === "en" ? projectsTxtEng.parrots : projectsTxtPt.parrots
+            }
             buttons={{
-              "demo video": (lang === "en" ? "pxgXRf_xgPE" : "_ideXYrOcFM"),
+              "demo video": lang === "en" ? "pxgXRf_xgPE" : "_ideXYrOcFM",
               "front-end repo":
                 "https://github.com/lucaspaulii/ParrotsCardGame",
             }}
-            technologies={[
-              <SiHtml5 />,
-              <SiCss3 />,
-              <SiJavascript />,
-            ]}
+            technologies={[<SiHtml5 />, <SiCss3 />, <SiJavascript />]}
             direction="r"
             imageDesktopSrc={"/laptop_parrots.png"}
             imageSmartphoneSrc={"/smartphone_parrots.png"}

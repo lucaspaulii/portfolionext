@@ -27,7 +27,7 @@ export default function About() {
 
   return (
     <div className="h-screen w-screen bg-gradient-to-tr from-blue-900 via-gray-900 to-purple-900 text-white flex flex-col items-center overflow-y-hidden overflow-x-hidden [text-shadow:_1px_2px_2px_var(--tw-shadow-color)] shadow-[#0000006f]">
-      <Image src="/bg3.jpg" alt="bg" fill />
+      <Image src="/bg3.jpg" alt="bg" fill placeholder="blur" priority={true} blurDataURL="/bgblur.png"/>
 
       <div className="w-full h-screen overflow-y-scroll sm:scrollbar-thin sm:scrollbar-track-neutral-600 sm:scrollbar-thumb-gray-950 z-30 overflow-x-hidden scrollbar-none pb-10">
         <motion.div
@@ -59,6 +59,9 @@ export default function About() {
                 alt="Lucas standing"
                 fill
                 className="object-cover"
+                placeholder="blur"
+                blurDataURL="/faceblur.jpg"
+                priority={true}
               />
             </motion.div>
           </div>
@@ -69,7 +72,8 @@ export default function About() {
               onClick={() => handleClick()}
               className="group p-3 bg-white bg-opacity-20 hover:scale-110  transition-all duration-[100ms] flex items-center gap-2 w-fit mb-5"
             >
-              {lang === "en" ? "Show More" : "Veja Mais"} <RiArrowDownSLine className="transition-all duration-[100ms] group-hover:scale-[135%] group-hover:translate-y-[0.2rem]"/>
+              {lang === "en" ? "Show More" : "Veja Mais"}{" "}
+              <RiArrowDownSLine className="transition-all duration-[100ms] group-hover:scale-[135%] group-hover:translate-y-[0.2rem]" />
             </button>
           )}
           {showMore && (
@@ -91,6 +95,9 @@ export default function About() {
                     alt="Lucas standing"
                     fill
                     className="object-cover"
+                    placeholder="blur"
+                    blurDataURL="/faceblur.jpg"
+                    priority={true}
                   />
                 </motion.div>
                 <motion.div
@@ -138,6 +145,9 @@ export default function About() {
                     alt="Lucas standing"
                     fill
                     className="object-cover"
+                    placeholder="blur"
+                    blurDataURL="/faceblur.jpg"
+                    priority={true}
                   />
                 </motion.div>
               </div>
@@ -153,6 +163,9 @@ export default function About() {
                     alt="Lucas standing"
                     fill
                     className="object-cover"
+                    placeholder="blur"
+                    blurDataURL="/faceblur.jpg"
+                    priority={true}
                   />
                 </motion.div>
                 <motion.div
@@ -178,7 +191,8 @@ export default function About() {
                   className="group mt-10 p-3 bg-white bg-opacity-20 hover:scale-110  transition-all duration-[100ms] flex items-center gap-2 w-fit"
                   onClick={() => handleClick()}
                 >
-                  {lang === "en" ? "Show Less" : "Veja Menos"} <RiArrowUpSLine className="transition-all duration-[100ms] group-hover:scale-[135%] group-hover:-translate-y-[0.2rem]" />
+                  {lang === "en" ? "Show Less" : "Veja Menos"}{" "}
+                  <RiArrowUpSLine className="transition-all duration-[100ms] group-hover:scale-[135%] group-hover:-translate-y-[0.2rem]" />
                 </button>
               ) : (
                 ""

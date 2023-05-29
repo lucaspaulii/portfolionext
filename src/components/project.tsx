@@ -156,7 +156,9 @@ export default function Project(props: project) {
                     width={130}
                     height={130}
                     quality={100}
-                    unoptimized
+                    placeholder="blur"
+                    blurDataURL="/smartphoneblur.png"
+                    priority={true}
                   />
                 </div>
                 <div className="absolute z-20 translate-x-[8rem] scale-[120%]">
@@ -166,7 +168,9 @@ export default function Project(props: project) {
                     width={140}
                     height={140}
                     quality={100}
-                    unoptimized
+                    placeholder="blur"
+                    blurDataURL="/smartphoneblur.png"
+                    priority={true}
                   />
                 </div>
               </div>
@@ -180,7 +184,9 @@ export default function Project(props: project) {
                     width={130}
                     height={130}
                     quality={100}
-                    unoptimized
+                    placeholder="blur"
+                    blurDataURL="/laptopblur.png"
+                    priority={true}
                   />
                 </div>
               </div>
@@ -194,7 +200,9 @@ export default function Project(props: project) {
                     width={140}
                     height={140}
                     quality={100}
-                    unoptimized
+                    placeholder="blur"
+                    blurDataURL="/smartphoneblur.png"
+                    priority={true}
                   />
                 </div>
               </div>

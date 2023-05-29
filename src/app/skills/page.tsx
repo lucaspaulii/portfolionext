@@ -23,7 +23,7 @@ export default function Skills() {
 
   return (
     <main className="h-screen w-screen bg-gradient-to-tr from-blue-900 via-gray-900 to-purple-900 text-white flex flex-col items-center overflow-hidden">
-      <Image src="/bg3.jpg" alt="bg" fill />
+      <Image src="/bg3.jpg" alt="bg" fill placeholder="blur" priority={true} blurDataURL="/bgblur.png"/>
       <div className="w-full h-screen overflow-y-scroll sm:scrollbar-thin sm:scrollbar-track-neutral-600 sm:scrollbar-thumb-gray-950 z-30 overflow-x-hidden scrollbar-none">
         <motion.div
           className="w-screen h-fit flex flex-col items-center sm:pt-28 pt-[5.5rem] pb-40 overflow-x-hidden"
