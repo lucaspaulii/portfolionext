@@ -23,7 +23,7 @@ export default function Contact() {
     <main className="h-screen w-screen bg-gradient-to-tr from-blue-900 via-gray-900 to-purple-900 text-white overflow-hidden">
       <Image src="/bg3.jpg" alt="bg" fill placeholder="blur" priority={true} blurDataURL="/bgblur.png"/>
       <motion.div
-        className="w-full h-full sm:pt-28 pt-[5.5rem] box-border overflow-hidden flex flex-col items-center"
+        className="w-full h-full sm:pt-28 pt-[5.5rem] box-border ms:overflow-hidden overflow-x-hidden overflow-y-scroll flex flex-col items-center scrollbar-none"
         initial={{ translateX: prevPage == "skills" ? "70vw" : "0" }}
         animate={{ translateX: "0" }}
         transition={{ delay: 0, duration: 0.2 }}

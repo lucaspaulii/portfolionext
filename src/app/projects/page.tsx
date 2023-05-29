@@ -46,7 +46,7 @@ export default function Projects() {
       <Image src="/bg3.jpg" alt="bg" fill placeholder="blur" priority={true} blurDataURL="/bgblur.png"/>
       <div className="w-full h-screen overflow-y-scroll overflow-x-hidden sm:scrollbar-track-neutral-600 sm:scrollbar-thumb-gray-950 z-30 scrollbar-none pb-6">
         <motion.div
-          className="w-screen h-fit flex flex-col items-center gap-8 sm:pt-28 pt-[5.5rem] sm:pb-44 pb-5 box-border"
+          className="w-screen h-fit flex flex-col items-center gap-8 sm:pt-28 pt-[5.5rem] sm:pb-44 pb-5 mb-16 box-border"
           initial={{ translateX: prevPage == "about" ? "70vw" : "-70vw" }}
           animate={{ translateX: "0" }}
           transition={{ delay: 0, duration: 0.2 }}
