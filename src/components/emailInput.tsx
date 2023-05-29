@@ -44,7 +44,7 @@ export default function EmailInput() {
         animate={{ translateX: 0, opacity: 1 }}
         transition={{ delay: 0.7, duration: 0.3 }}
       >
-        <label className="font-semibold sm:text-lg text-sm [text-shadow:_0_1px_6px_var(--tw-shadow-color)] shadow-black w-full">
+        <label className="sm:font-semibold sm:text-lg text-sm [text-shadow:_0_1px_6px_var(--tw-shadow-color)] shadow-black w-full">
           {lang === "en" ? "Name" : "Nome"}
         </label>
         <input
@@ -59,7 +59,7 @@ export default function EmailInput() {
         animate={{ translateX: 0, opacity: 1 }}
         transition={{ delay: 0.7, duration: 0.3 }}
       >
-        <label className="font-semibold sm:text-lg text-sm [text-shadow:_0_1px_6px_var(--tw-shadow-color)] shadow-black w-full">
+        <label className="sm:font-semibold sm:text-lg text-sm [text-shadow:_0_1px_6px_var(--tw-shadow-color)] shadow-black w-full">
           Email
         </label>
         <input
@@ -69,12 +69,12 @@ export default function EmailInput() {
         />
       </motion.div>
       <motion.div className="w-full">
-        <label className="font-semibold sm:text-lg text-sm [text-shadow:_0_1px_6px_var(--tw-shadow-color)] shadow-black w-full">
+        <label className="sm:font-semibold sm:text-lg text-sm [text-shadow:_0_1px_6px_var(--tw-shadow-color)] shadow-black w-full">
           {lang === "en" ? "Message" : "Mensagem"}
         </label>
         <textarea
           name="message"
-          className=" h-40 rounded-lg text-black pt-2 pl-2 mb-2 bg-white bg-opacity-60 w-full"
+          className="sm:h-40 h-32 rounded-lg text-black pt-2 pl-2 mb-2 bg-white bg-opacity-60 w-full"
         />
       </motion.div>
       <motion.input
@@ -83,7 +83,7 @@ export default function EmailInput() {
         initial={{ translateY: 1000, opacity: 0, rotate: 360 }}
         animate={{ translateY: 0, opacity: 1, rotate: 0 }}
         transition={{ delay: 0.5, duration: 0.05 }}
-        className="bg-red-700 rounded-lg p-2 mt-2 font-bold sm:text-xl shadow shadow-black [text-shadow:_0_1px_6px_var(--tw-shadow-color)] w-1/2 sm:w-1/5 transition-all hover:bg-red-600 hover:scale-110 duration-700"
+        className="bg-red-700 rounded-lg sm:p-2 p-1 mt-2 font-bold sm:text-xl shadow shadow-black [text-shadow:_0_1px_6px_var(--tw-shadow-color)] w-1/2 sm:w-1/5 transition-all hover:bg-red-600 hover:scale-110 duration-700"
       />
     </motion.form>
   );
