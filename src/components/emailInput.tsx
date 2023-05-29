@@ -44,7 +44,7 @@ export default function EmailInput() {
         animate={{ translateX: 0, opacity: 1 }}
         transition={{ delay: 0.7, duration: 0.3 }}
       >
-        <label className="font-semibold sm:text-lg [text-shadow:_0_1px_6px_var(--tw-shadow-color)] shadow-black w-full">
+        <label className="font-semibold sm:text-lg text-sm [text-shadow:_0_1px_6px_var(--tw-shadow-color)] shadow-black w-full">
           {lang === "en" ? "Name" : "Nome"}
         </label>
         <input
@@ -59,7 +59,7 @@ export default function EmailInput() {
         animate={{ translateX: 0, opacity: 1 }}
         transition={{ delay: 0.7, duration: 0.3 }}
       >
-        <label className="font-semibold sm:text-lg [text-shadow:_0_1px_6px_var(--tw-shadow-color)] shadow-black w-full">
+        <label className="font-semibold sm:text-lg text-sm [text-shadow:_0_1px_6px_var(--tw-shadow-color)] shadow-black w-full">
           Email
         </label>
         <input
@@ -69,7 +69,7 @@ export default function EmailInput() {
         />
       </motion.div>
       <motion.div className="w-full">
-        <label className="font-semibold sm:text-lg [text-shadow:_0_1px_6px_var(--tw-shadow-color)] shadow-black w-full">
+        <label className="font-semibold sm:text-lg text-sm [text-shadow:_0_1px_6px_var(--tw-shadow-color)] shadow-black w-full">
           {lang === "en" ? "Message" : "Mensagem"}
         </label>
         <textarea
