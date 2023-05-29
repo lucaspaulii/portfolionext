@@ -37,7 +37,7 @@ export default function About() {
           transition={{ delay: 0, duration: 0.2 }}
         >
           <PageTitle title={lang == "en" ? "About" : "Sobre"} />
-          <div className="sm:w-4/6 h-fit flex sm:flex-row items-center flex-col-reverse sm:gap-8 gap-2 sm:mb-4 scale-[80%] sm:-mt-24 -mt-48 w-full">
+          <div className="sm:w-4/6 h-fit flex sm:flex-row items-center sm:items-start flex-col-reverse sm:gap-8 gap-2 sm:mb-4 scale-[80%] sm:-mt-24 -mt-48 w-full">
             <motion.div
               className="w-full sm:w-[59%] h-[auto] flex items-center justify-center"
               initial={{ opacity: 0, translateX: "10rem" }}
@@ -49,7 +49,7 @@ export default function About() {
               </p>
             </motion.div>
             <motion.div
-              className="w-[300px] h-[450px] sm:h-[1200px] sm:w-[41%] relative mb-4 sm:mb-0"
+              className="w-[300px] h-[450px] sm:h-[800px] 3xl:h-[700px] sm:w-[41%] relative mb-4 sm:mb-0"
               initial={{ opacity: 0, translateX: "-10rem" }}
               whileInView={{ opacity: 1, translateX: 0 }}
               transition={{ delay: 0.4, duration: 0.4 }}
@@ -83,7 +83,7 @@ export default function About() {
               animate={{ height: "fit-content", opacity: 1 }}
               transition={{ delay: 0, duration: 0.3 }}
             >
-              <div className="sm:w-4/6 w-full h-fit mt-8 mb-24 flex sm:flex-row flex-col sm:justify-start justify-center gap-8">
+              <div className="sm:w-4/6 sm:min-w-fit sm:ml-48 w-full h-fit mt-8 mb-24 flex sm:flex-row flex-col sm:justify-start justify-center gap-8">
                 <motion.div
                   className="sm:w-2/6 w-full sm:h-[auto] h-[200px] relative"
                   initial={{ opacity: 0, translateX: "10rem" }}
