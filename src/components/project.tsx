@@ -137,19 +137,19 @@ export default function Project(props: project) {
         </div>
       </motion.div>
       <motion.div
-        className="w-[90%] h-fit flex flex-col sm:hidden rounded-lg mt-10 mb-10 min-h-[16rem] shadow-lg"
+        className="w-[85%] h-fit flex flex-col sm:hidden rounded-lg mt-10 mb-10 min-h-[16rem] shadow-lg"
         initial={{
           translateX: props.direction == "r" ? "66vw" : "-74vw",
           opacity: 0,
         }}
         whileInView={{ translateX: 0, opacity: 1 }}
-        transition={{ delay: 0.3, duration: 0.1 }}
+        transition={{ delay: 0.3, duration: 0.5 }}
       >
         <div className="flex flex-col items-center h-fit min-h-[9rem] w-full bg-white bg-opacity-70 rounded-t-lg mt-20">
           <div className="h-20 w-full flex flex-col items-center">
             {props.imageDesktopSrc && props.imageSmartphoneSrc && (
               <div className="h-full w-full flex items-center justify-center -translate-y-14">
-                <div className="absolute scale-[230%] -translate-x-[3rem]">
+                <div className="absolute scale-[210%] -translate-x-[3rem]">
                   <Image
                     src={props.imageDesktopSrc as string}
                     alt="laptop"
@@ -161,7 +161,7 @@ export default function Project(props: project) {
                     priority={true}
                   />
                 </div>
-                <div className="absolute z-20 translate-x-[8rem] scale-[120%]">
+                <div className="absolute z-20 translate-x-[7.5rem] scale-[110%]">
                   <Image
                     src={props.imageSmartphoneSrc as string}
                     alt="smartphone"

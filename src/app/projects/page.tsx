@@ -44,7 +44,7 @@ export default function Projects() {
   return (
     <main className="h-screen w-screen bg-gradient-to-tr from-blue-900 via-gray-900 to-purple-900 text-white flex flex-col items-center overflow-hidden">
       <Image src="/bg3.jpg" alt="bg" fill placeholder="blur" priority={true} blurDataURL="/bgblur.png"/>
-      <div className="w-full h-screen overflow-y-scroll overflow-x-hidden sm:scrollbar-track-neutral-600 sm:scrollbar-thumb-gray-950 z-30 scrollbar-none">
+      <div className="w-full h-screen overflow-y-scroll overflow-x-hidden sm:scrollbar-track-neutral-600 sm:scrollbar-thumb-gray-950 z-30 scrollbar-none pb-6">
         <motion.div
           className="w-screen h-fit flex flex-col items-center gap-8 sm:pt-28 pt-[5.5rem] sm:pb-44 pb-5 box-border"
           initial={{ translateX: prevPage == "about" ? "70vw" : "-70vw" }}

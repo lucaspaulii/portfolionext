@@ -188,7 +188,7 @@ export default function About() {
               </div>
               {showMore ? (
                 <button
-                  className="group mt-10 p-3 bg-white bg-opacity-20 hover:scale-110  transition-all duration-[100ms] flex items-center gap-2 w-fit"
+                  className="group mt-10 p-3 bg-white bg-opacity-20 hover:scale-110  transition-all duration-[100ms] flex items-center gap-2 w-fit mb-5"
                   onClick={() => handleClick()}
                 >
                   {lang === "en" ? "Show Less" : "Veja Menos"}{" "}

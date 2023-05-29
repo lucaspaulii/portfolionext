@@ -84,7 +84,7 @@ export default function PictureMobile() {
               animate={{ opacity: 100, height: "auto" }}
               transition={{ delay: 2.0, ease: "easeIn", duration: 0.2 }}
             >
-              {lang === "en" ? mainTxtEng.welcomeText : mainTxtPt.welcomeText}
+              {lang === "en" ? mainTxtEng.welcomeTextMobile : mainTxtPt.welcomeTextMobile}
             </motion.p>
           </motion.div>
         </motion.div>

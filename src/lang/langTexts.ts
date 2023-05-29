@@ -18,12 +18,16 @@ export const navigationTxtPt = {
 export const mainTxtEng = {
   welcome: "WELCOME!",
   welcomeText:
-    "Hi, my name is Lucas and I'm a FullStack Web Developer (Yeah, I like both FrontEnd and BackEnd) and this is my portfolio website. This website was created using Next.js TypeScript and Tailwind CSS, and it's designed to make you understand a bit more about who I am, who I was, what I've done, why I'm here and where I wanna go!",
+    "Hi, my name is Lucas. I'm a FullStack Web Developer and this is my portfolio website. This website was created using Next.js TypeScript and Tailwind CSS, and it's designed to make you understand a bit more about who I am, who I was, what I've done, why I'm here and where I wanna go!",
+    welcomeTextMobile:
+    "Hi, my name is Lucas. I'm a FullStack Web Developer and this is my portfolio website. This website is designed to make you understand a bit more about who I am, who I was, what I've done, why I'm here and where I wanna go!",
 };
 export const mainTxtPt = {
   welcome: "Bem Vindo!",
   welcomeText:
-    "Olá, meu nome é Lucas e eu sou um Desenvolvedor Web FullStack (Sim, eu gosto tanto de Front quanto de Back) e esse é meu site portfólio. Esse site foi desenvolvido usando Next.js, TypeScript e Tailwind CSS, e foi pensado para que você entenda um pouquinho melhor sobre quem eu sou, quem eu era, o que eu já fiz, porque estou aqui, e onde quero chegar!",
+    "Olá, meu nome é Lucas, um Desenvolvedor Web FullStack e esse é meu site portfólio. Esse site foi desenvolvido usando Next.js, TypeScript e Tailwind CSS, e foi pensado para que você entenda um pouquinho melhor sobre quem eu sou, quem eu era, o que eu já fiz, porque estou aqui, e onde quero chegar!",
+    welcomeTextMobile:
+    "Olá, meu nome é Lucas, um Desenvolvedor Web FullStack e esse é meu site portfólio. Esse site foi pensado para que você entenda um pouquinho melhor sobre quem eu sou, quem eu era, o que eu já fiz, porque estou aqui, e onde quero chegar!",
 };
 
 //About
@@ -38,9 +42,7 @@ export const aboutTxtEng = {
    
   Throughout my journey as a web developer, while I may not have professional experience in the industry yet, I have dedicated myself to personal projects that showcase my skills and commitment to growth. These projects include building responsive websites, creating interactive web applications, and APIs to provide data for those applications, where I've applied my knowledge in technologies such as HTML/CSS, JavaScript, React.js, and Node.js. 💻✨
    
-  Beyond my professional endeavors, I'm a passionate musician, having served as the lead singer in a band. This experience allowed me to cultivate strong communication skills, adaptability, and creativity, qualities that seamlessly translate into my work as a developer. 🎤🎶 Moreover, my active participation in various handball teams has instilled in me a competitive spirit, discipline, and a relentless drive to excel in a collaborative environment. 🤾‍♂️🏆
-   
-  I'm excited to contribute my expertise in web development and interpersonal skills to innovative teams. If you're seeking a dedicated, creative, and technology-driven professional who can surpass your expectations and propel your projects to success, let's connect and explore the possibilities! 🤝🚀`,
+  Beyond my professional endeavors, I'm a passionate musician, having served as the lead singer in a band. This experience allowed me to cultivate strong communication skills, adaptability, and creativity, qualities that seamlessly translate into my work as a developer. 🎤🎶 Moreover, my active participation in various handball teams has instilled in me a competitive spirit, discipline, and a relentless drive to excel in a collaborative environment. 🤾‍♂️🏆`,
   teamTitle: `Team Player`,
   teamText: `   Since the age of 15, I have been involved in various handball teams, starting with my city's team, where I had the opportunity to participate in state championships and travel extensively throughout the southern region of Brazil. These experiences played a significant role in shaping my individuality as I had to take care of myself during these trips, often spending up to a week in unfamiliar places facing the pressure to deliver results.
   
@@ -69,9 +71,7 @@ export const aboutTxtPt = {
   
   Busquei também um conhecimento aprofundado ao participar do curso CS50 de Ciência da Computação de Harvard, fortalecendo minha base teórica e ampliando meu entendimento sobre os fundamentos da área. 📚🎓
   
-  Como um apaixonado por música, tive a oportunidade de ser vocalista de uma banda, desenvolvendo habilidades de comunicação e criatividade. 🎤🎶 Além disso, minha participação em diversas equipes de handebol me proporcionou motivação, disciplina e uma forte capacidade de trabalho em equipe. 🤾‍♂️🏆
-  
-  Estou ansioso para fazer parte de equipes inovadoras, contribuindo com minha experiência em desenvolvimento web e minhas habilidades interpessoais. Se você está em busca de um profissional dedicado, criativo e apaixonado pela tecnologia, estou pronto para superar suas expectativas e agregar valor ao seu projeto. 💪✨`,
+  Como um apaixonado por música, tive a oportunidade de ser vocalista de uma banda, desenvolvendo habilidades de comunicação e criatividade. 🎤🎶 Além disso, minha participação em diversas equipes de handebol me proporcionou motivação, disciplina e uma forte capacidade de trabalho em equipe. 🤾‍♂️🏆`,
   teamTitle: "Trabalho em Equipe",
   teamText: `Desde os 15 anos, participei de várias equipes de handebol, começando com a equipe da minha cidade, onde tive a oportunidade de participar de campeonatos regionais e estaduais e viajar com a equipe por diversas cidades da região sul do Brasil. Essas experiências desempenharam um papel significativo na formação da minha individualidade, já que eu precisava cuidar de mim mesmo durante essas viagens, passando frequentemente até uma semana em lugares desconhecidos, enfrentando também a pressão de alcançar resultados nos campeonatos.
 
@@ -84,7 +84,7 @@ export const aboutTxtPt = {
   creativeTitle: "Criatividade e Comunicação",
   creativeText: `No ano de 2019, eu e mais três amigos decidimos formar uma banda, sem saber dos desafios que nos aguardavam. Desde então, tive o privilégio de me apresentar em palcos importantes, cativando pessoas, escrevendo e lançando minhas próprias músicas, além de criar estratégias de marketing eficazes para nossos lançamentos.
 
-  A oportunidade de me apresentar diante de públicos diversos aprimorou minha habilidade de me comunicar de forma eficaz em público. Desenvolvi uma habilidade natural para captar atenção e me conectar com as pessoas. Essas experiências fortaleceram minha confiança e melhoraram minhas habilidades de comunicação, permitindo que eu me envolva e argumente com os ouvintes.
+  A oportunidade de me apresentar diante de públicos diversos aprimorou minha habilidade de me comunicar de forma eficaz em público. Desenvolvi uma habilidade natural para captar atenção e me conectar com as pessoas.
   A composição de músicas me tornou uma pessoa mais criativa, pois precisei encontrar melodias e pensar nelas de forma a transmitir os sentimentos que eu desejava, combinando-as de forma coerente com as letras.
   
   O lançamento das nossas músicas me impulsionou a pensar estrategicamente e a ser engenhoso. Com recursos financeiros limitados (já que éramos todos estudantes universitários), tivemos que desenvolver estratégias de marketing que maximizassem nosso alcance. Apesar das restrições financeiras, alcançamos um sucesso notável, acumulando impressionantes 166.000 reproduções no Spotify para uma de nossas músicas. Coletivamente, nossas quatro músicas somaram mais de 260.000 reproduções, e nossa música chegou a várias estações de rádio em todo o Brasil.`,
@@ -117,7 +117,7 @@ export const projectsTxtEng = {
 export const projectsTxtPt = {
   main: "Esta é uma seção onde exibo alguns dos meus melhores projetos, criados com diversas tecnologias e métodos!",
   musichems:
-    "Uma plataforma onde você pode pesquisar artistas (bandas/DJs/artistas solo) disponíveis para se apresentar em um determinado local em uma determinada data, filtrados por estilo musical, e acessar sua página de perfil para saber mais sobre o artista e, em seguida, contratá-los para o seu show!",
+    "Uma plataforma onde você pode pesquisar artistas (bandas/DJs/artistas solo) disponíveis para se apresentar em um determinado local, em uma determinada data, filtrados por estilo musical, e acessar sua página de perfil para saber mais sobre o artista e, em seguida, contratá-los para o seu show!",
   wallet:
     "Uma carteira pessoal para controlar as receitas e despesas mensais, onde você pode adicionar valores recebidos ou gastos e ver o saldo atual",
   drivent:

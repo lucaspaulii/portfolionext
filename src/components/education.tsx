@@ -11,7 +11,7 @@ export default function Education() {
     <div className="flex flex-col items-center">
       <Subtitle subtitle={lang === "en" ? "Education" : "Educação"} />
       <motion.div
-        className="flex flex-col w-full bg-white bg-opacity-60 sm:rounded-lg h-fit sm:p-8 p-5 sm:mt-8 mt-4"
+        className="flex flex-col w-full bg-white bg-opacity-60 sm:rounded-lg h-fit sm:p-8 p-8 sm:mt-8 mt-4"
         initial={{ translateX: "-20rem", opacity: 0 }}
         animate={{ translateX: "0", opacity: 1 }}
         transition={{ delay: 0.8, duration: 0.2 }}
