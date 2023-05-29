@@ -171,9 +171,9 @@ A simulação então entrou na próxima fase, onde eu participei de uma equipe t
   },
   education: {
     driven: {
-      title: "Full Stack Development",
+      title: "Desenvolvimento Full Stack",
       company: "Driven Education",
-      period: "Jun/2022 - May/2023",
+      period: "Jun/2022 - Mai/2023",
       description: `• Formaçao intensiva de +1.200h focadas em projetos práticos.
 • +25 projetos práticos nas tecnologias: HTML, CSS, Javascript (React.js, Node.js, Typescript e Prisma).
 • Fundamentos da engenharia de software: lógica de programaçao, algoritmos, estrutura de dados, orientação a objetos, arquitetura, otimizaçao, performance e clean code.
@@ -184,9 +184,9 @@ A simulação então entrou na próxima fase, onde eu participei de uma equipe t
 • Desenvolvimento de competências comportamentais e habilidades profissionais (soft skills).`,
     },
     cs50: {
-      title: "Computer Science - CS50",
+      title: "Ciência da Computação - CS50",
       company: "Harvard University",
-      period: "Dec/2022 - Jun/2023",
+      period: "Dez/2022 - Jun/2023",
       description: ` •  Uma compreensão ampla e robusta de ciência da computação e programação.
 • Como pensar algoritmicamente e resolver problemas de programação de forma eficiente.
 • Conceitos como abstração, algoritmos, estruturas de dados, encapsulamento, gerenciamento de recursos, segurança, engenharia de software e desenvolvimento web.
@@ -195,8 +195,8 @@ A simulação então entrou na próxima fase, onde eu participei de uma equipe t
 • Como desenvolver e apresentar um projeto final de programação para seus colegas.`,
     },
     ufsc: {
-      title: "Civil Engineering (Incomplete)",
-      company: "Federal University of Santa Catarina (UFSC)",
+      title: "Engenharia Civil (Incompleto)",
+      company: "Universidade Federal de Santa Catarina (UFSC)",
       period: "Mar/2014 - Mar/2022",
       description: `• Introdução à Ciência da Computação usando Pascal.
 • Cálculo Numérico com foco em algorítmos.`,
