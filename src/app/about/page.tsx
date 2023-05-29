@@ -26,10 +26,10 @@ export default function About() {
   }
 
   return (
-    <div className="h-screen w-screen bg-gradient-to-tr from-blue-900 via-gray-900 to-purple-900 text-white flex flex-col items-center overflow-hidden [text-shadow:_1px_2px_2px_var(--tw-shadow-color)] shadow-[#0000006f]">
+    <div className="h-screen w-screen bg-gradient-to-tr from-blue-900 via-gray-900 to-purple-900 text-white flex flex-col items-center overflow-y-hidden overflow-x-hidden [text-shadow:_1px_2px_2px_var(--tw-shadow-color)] shadow-[#0000006f]">
       <Image src="/bg3.jpg" alt="bg" fill />
 
-      <div className="w-full h-screen overflow-y-scroll sm:scrollbar-thin sm:scrollbar-track-neutral-600 sm:scrollbar-thumb-gray-950 z-30 overflow-x-hidden scrollbar-none">
+      <div className="w-full h-screen overflow-y-scroll sm:scrollbar-thin sm:scrollbar-track-neutral-600 sm:scrollbar-thumb-gray-950 z-30 overflow-x-hidden scrollbar-none pb-10">
         <motion.div
           className="pb-14 w-full h-fit sm:pt-28 pt-[5.5rem] flex flex-col items-center"
           initial={{ translateX: prevPage == "/" ? "70vw" : "-70vw" }}
