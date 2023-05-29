@@ -50,7 +50,7 @@ export default function EmailInput() {
         <input
           type="text"
           name="user_name"
-          className=" h-9 rounded-lg text-black pl-2 mb-1 bg-white bg-opacity-60 w-full"
+          className="sm:h-9 h-7 rounded-lg text-black pl-2 mb-1 bg-white bg-opacity-60 w-full"
         />
       </motion.div>
       <motion.div
@@ -65,7 +65,7 @@ export default function EmailInput() {
         <input
           type="email"
           name="user_email"
-          className=" h-9 rounded-lg text-black pl-2 mb-1 bg-white bg-opacity-60 w-full"
+          className="sm:h-9 h-7 rounded-lg text-black pl-2 mb-1 bg-white bg-opacity-60 w-full"
         />
       </motion.div>
       <motion.div className="w-full">
@@ -74,7 +74,7 @@ export default function EmailInput() {
         </label>
         <textarea
           name="message"
-          className="sm:h-40 h-32 rounded-lg text-black pt-2 pl-2 mb-2 bg-white bg-opacity-60 w-full"
+          className="sm:h-40 h-28 rounded-lg text-black pt-2 pl-2 mb-2 bg-white bg-opacity-60 w-full"
         />
       </motion.div>
       <motion.input
