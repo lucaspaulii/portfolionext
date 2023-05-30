@@ -69,18 +69,17 @@ export const aboutTxtPt = {
   
   Para aprimorar minhas habilidades, embarquei no bootcamp de Desenvolvimento Web FullStack da Driven Education. Durante esse programa intensivo de 9 meses, adquiri habilidades técnicas sólidas em tecnologias como HTML/CSS, Javascript, Typescript, React.js, Node.js, Express.js, entre outras. Além disso, o bootcamp enfatizou o desenvolvimento de competências interpessoais, reconhecendo a importância das soft skills. 🌟💼
   
-  Busquei também um conhecimento aprofundado ao participar do curso CS50 de Ciência da Computação de Harvard, fortalecendo minha base teórica e ampliando meu entendimento sobre os fundamentos da área. 📚🎓
+  Busquei também um conhecimento aprofundado ao participar do curso CS50 - Ciência da Computação, de Harvard, fortalecendo minha base teórica e ampliando meu entendimento sobre os fundamentos da área. 📚🎓
   
   Como um apaixonado por música, tive a oportunidade de ser vocalista de uma banda, desenvolvendo habilidades de comunicação e criatividade. 🎤🎶 Além disso, minha participação em diversas equipes de handebol me proporcionou motivação, disciplina e uma forte capacidade de trabalho em equipe. 🤾‍♂️🏆`,
   teamTitle: "Trabalho em Equipe",
-  teamText: `Desde os 15 anos, participei de várias equipes de handebol, começando com a equipe da minha cidade, onde tive a oportunidade de participar de campeonatos regionais e estaduais e viajar com a equipe por diversas cidades da região sul do Brasil. Essas experiências desempenharam um papel significativo na formação da minha individualidade, já que eu precisava cuidar de mim mesmo durante essas viagens, passando frequentemente até uma semana em lugares desconhecidos, enfrentando também a pressão de alcançar resultados nos campeonatos.
+  teamText: `Desde meus 15 anos participei de várias equipes de handebol, começando com a equipe da minha cidade, onde tive a oportunidade de participar de campeonatos regionais e estaduais e viajar com a equipe por diversas cidades da região sul do Brasil. Essas experiências tiveram um papel significativo na formação da minha individualidade, já que eu precisava cuidar de mim mesmo durante essas viagens, passando frequentemente até uma semana em lugares desconhecidos, enfrentando também a pressão de alcançar resultados nos campeonatos.
 
-  Ao completar 18 anos, ingressei na Universidade Federal de Santa Catarina (UFSC) e me juntei à equipe de handebol da universidade. Participei ativamente de competições universitárias estaduais, aprimorando ainda mais minhas habilidades e capacidades de trabalho em equipe. A experiência de jogar em um ambiente competitivo desde cedo realmente me transformou em um bom trabalhador em equipe, alguém que valoriza os esforços coletivos e colabora de forma eficaz para alcançar objetivos em comum.`,
+  Ao completar 18 anos, ingressei na Universidade Federal de Santa Catarina (UFSC) e me juntei à equipe de handebol. Participei ativamente de competições universitárias estaduais, aprimorando ainda mais minhas habilidades e capacidades de trabalho em equipe. A experiência de jogar em um ambiente competitivo desde cedo realmente me transformou em um bom trabalhador em equipe, alguém que valoriza os esforços coletivos e colabora de forma eficaz para alcançar objetivos em comum.`,
   problemSolvingTitle: "Solução de Problemas",
-  problemSolvingText: `Durante meu curso de Engenharia Civil, pude desenvolver habilidades excelentes em resolução de problemas e pensamento crítico, tendo várias disciplinas que me ensinaram a analisar diferentes aspectos de cada problema e encontrar soluções distintas para cada um deles.
-  Ao concluir todas as disciplinas de cálculo (cálculo 1, 2, 3), minhas habilidades matemáticas também foram colocadas à prova, aprimorando ainda mais minha capacidade de resolver problemas e meu pensamento crítico e lógico.
+  problemSolvingText: `Durante meu curso de Engenharia Civil, pude desenvolver habilidades em resolução de problemas, pensamento crítico e lógico, tendo várias disciplinas que me ensinaram a analisar diferentes aspectos de cada problema e encontrar soluções distintas para cada um deles.
   
-  Foi durante esse período que tive meu primeiro contato com a programação, primeiro através de um amigo que me apresentou o Scratch (MIT), onde desenvolvi um jogo de labirinto simples em que você não podia tocar nas paredes se não voltaria ao início, e depois através de disciplinas da graduação, como Introdução à Ciência da Computação, onde aprendemos princípios básicos de programação usando Pascal, e Cálculo Numérico, onde aprendemos mais sobre algoritmos e como usá-los para resolver problemas.`,
+  Foi durante esse período que tive meu primeiro contato com a programação. Primeiro através de um amigo que me apresentou o Scratch (MIT), e depois através de disciplinas da graduação, como Introdução à Ciência da Computação, onde aprendemos princípios básicos de programação usando Pascal, e Cálculo Numérico, onde aprendemos mais sobre algoritmos e como usá-los para resolver problemas.`,
   creativeTitle: "Criatividade e Comunicação",
   creativeText: `No ano de 2019, eu e mais três amigos decidimos formar uma banda, sem saber dos desafios que nos aguardavam. Desde então, tive o privilégio de me apresentar em palcos importantes, cativando pessoas, escrevendo e lançando minhas próprias músicas, além de criar estratégias de marketing eficazes para nossos lançamentos.
 
@@ -119,16 +118,16 @@ export const projectsTxtPt = {
   musichems:
     "Uma plataforma onde você pode pesquisar artistas (bandas/DJs/artistas solo) disponíveis para se apresentar em um determinado local, em uma determinada data, filtrados por estilo musical, e acessar sua página de perfil para saber mais sobre o artista e, em seguida, contratá-los para o seu show!",
   wallet:
-    "Uma carteira pessoal para controlar as receitas e despesas mensais, onde você pode adicionar valores recebidos ou gastos e ver o saldo atual",
+    "Uma carteira pessoal para controlar as receitas e despesas mensais, onde você pode adicionar valores recebidos ou gastos e ver o saldo atual.",
   drivent:
-    "Um site de eventos white label, projetado para ser específico para cada evento, onde você pode se inscrever (opção de ser remoto ou local) e pagar pela inscrição. Caso o usuário escolha a opção local, o site exibe opções de hotéis para o usuário escolher e reservar um quarto. Com o hotel reservado e a inscrição paga, o usuário pode se inscrever em atividades diárias escolhendo-as em um calendário. Este projeto foi criado com uma equipe de 4 desenvolvedores trabalhando sob o método ágil SCRUM usando o Trello para acompanhar as tarefas",
+    "Um site de eventos white label, projetado para ser específico para cada evento, onde você pode se inscrever (opção de ser remoto ou local) e pagar pela inscrição. Caso o usuário escolha a opção local, o site exibe opções de hotéis para o usuário escolher e reservar um quarto. Com o hotel reservado e a inscrição paga, o usuário pode se inscrever em atividades diárias escolhendo-as em um calendário. Este projeto foi criado com uma equipe de 4 desenvolvedores trabalhando sob o método ágil SCRUM usando o Trello para acompanhar as tarefas.",
   linkr:
-    "Uma rede social para compartilhar seus links favoritos, onde você pode curtir, retuitar e seguir outros usuários e ver o que está em alta. Este projeto foi criado com uma equipe de 4 desenvolvedores trabalhando sob o método ágil SCRUM, usando o Trello para acompanhar as tarefas",
+    "Uma rede social para compartilhar seus links favoritos, onde você pode curtir, retuitar e seguir outros usuários e ver o que está em alta. Este projeto foi criado com uma equipe de 4 desenvolvedores trabalhando sob o método ágil SCRUM, usando o Trello para acompanhar as tarefas.",
   primafiat:
-    "Um projeto freelancer para uma loja de revenda de carros, onde há um frontend apenas para exibir as entregas de carros no dia atual, um frontend para popular o banco de dados com as entregas e um backend para persistir essas inserções em um banco de dados",
-  shortly: "Um projeto de backend onde você pode encurtar URLs",
+    "Um projeto freelancer para uma loja de revenda de carros, onde há um frontend apenas para exibir as entregas de carros no dia atual, um frontend para popular o banco de dados com as entregas e um backend para persistir essas inserções em um banco de dados.",
+  shortly: "Um projeto de backend onde você pode encurtar URLs.",
   lacopa:
-    "Uma loja online de produtos da Copa do Mundo da FIFA, onde você pode pesquisar produtos por nome ou categorias, adicioná-los ao carrinho e finalizar seu pedido. Este projeto foi criado com uma equipe de 2 desenvolvedores",
+    "Uma loja online de produtos da Copa do Mundo da FIFA, onde você pode pesquisar produtos por nome ou categorias, adicioná-los ao carrinho e finalizar seu pedido. Este projeto foi criado com uma equipe de 2 desenvolvedores.",
   cineflex:
     "Um site de cinema (apenas front-end) criado usando uma API de filmes de terceiros, onde você pode encontrar um filme, ver sua descrição, visualizar as sessões disponíveis, os assentos disponíveis nessa sessão e, em seguida, reservar os assentos desejados.",
   parrots:
@@ -164,9 +163,9 @@ A simulação então entrou na próxima fase, onde eu participei de uma equipe t
     },
     concreta: {
       title: "Orçamentista e Projetista Estagiário",
-      company: "Concreta Pre Moldados",
+      company: "Concreta Pré Moldados",
       period: "Mai/2018 - Mai/2019",
-      description: "Como Orçamentista e Projetista Estagiário na concreta pré moldados, conduzi estimativas de custo para galpões pré-moldados e desenvolvi projetos visuais para atender às necessidades dos clientes. Essa experiência me proporcionou uma sólida compreensão de transformar as ideias dos clientes em projetos concretos que superassem suas expectativas.",
+      description: "Como Orçamentista e Projetista Estagiário na Concreta Pré Moldados, conduzi estimativas de custo para galpões pré-moldados e desenvolvi projetos visuais para atender às necessidades dos clientes. Essa experiência me proporcionou uma sólida compreensão de transformar as ideias dos clientes em projetos concretos que superassem suas expectativas.",
     },
   },
   education: {
@@ -174,13 +173,13 @@ A simulação então entrou na próxima fase, onde eu participei de uma equipe t
       title: "Desenvolvimento Full Stack",
       company: "Driven Education",
       period: "Jun/2022 - Mai/2023",
-      description: `• Formaçao intensiva de +1.200h focadas em projetos práticos.
-• +25 projetos práticos nas tecnologias: HTML, CSS, Javascript (React.js, Node.js, Typescript e Prisma).
-• Fundamentos da engenharia de software: lógica de programaçao, algoritmos, estrutura de dados, orientação a objetos, arquitetura, otimizaçao, performance e clean code.
-• Bancos de dados relacionais e nao refacionais com Postgres, MongoDB e Redis.
+      description: `• Formação intensiva de +1.200h focadas em projetos práticos.
+• +25 projetos práticos nas tecnologias: HTML, CSS, Javascript, React.js, Node.js, Typescript e Prisma.
+• Fundamentos da engenharia de software: lógica de programação, algorítmos, estrutura de dados, orientação a objetos, arquitetura, otimização, performance e clean code.
+• Bancos de dados relacionais e não relacionais com Postgres, MongoDB e Redis.
 • Princípios de Devops com GitHub Actions, Docker e AWS.
-• Testes unitários, integração e ponta a ponta com Jest, SuperTest e Cypress.
-• Trabalhos em equipe usando metodologias ágeis (Scrum), Git, Slack, Trello, Zoom, colaborando, dando e recebendo feedbacks
+• Testes unitários, de integração e ponta-a-ponta, com Jest, SuperTest e Cypress.
+• Trabalhos em equipe usando metodologias ágeis (Scrum), Git, Slack, Trello, Zoom. Coolaborando dando e recebendo feedbacks.
 • Desenvolvimento de competências comportamentais e habilidades profissionais (soft skills).`,
     },
     cs50: {
@@ -191,7 +190,7 @@ A simulação então entrou na próxima fase, onde eu participei de uma equipe t
 • Como pensar algoritmicamente e resolver problemas de programação de forma eficiente.
 • Conceitos como abstração, algoritmos, estruturas de dados, encapsulamento, gerenciamento de recursos, segurança, engenharia de software e desenvolvimento web.
 • Familiaridade com várias linguagens, incluindo C, Python, SQL e JavaScript, além de CSS e HTML.
-• Como se envolver com uma comunidade vibrante de alunos com ideias semelhantes de todos os niveis de experiência.
+• Como se envolver com uma comunidade vibrante de alunos com ideias semelhantes de todos os níveis de experiência.
 • Como desenvolver e apresentar um projeto final de programação para seus colegas.`,
     },
     ufsc: {
