@@ -36,7 +36,7 @@ export const aboutTxtEng = {
 
   My journey in programming began when I stumbled upon YouTube videos exploring innovative languages and technologies. Dissatisfied with the field of Civil Engineering, I made a bold decision to pursue a new challenge in web development.
    
-  To continuously enhance my skills, I enrolled in the Driven Education FullStack Web Development bootcamp, where I honed my expertise in technologies such as HTML/CSS, JavaScript, TypeScript, React.js, Node.js, and Express.js. This intensive 9-month program not only equipped me with a solid technical foundation but also emphasized the development of essential soft-skills, fostering effective collaboration and client satisfaction. 🌟🚀
+  To continuously enhance my skills, I enrolled in the Driven Education FullStack Web Development intensive program, where I honed my expertise in technologies such as HTML/CSS, JavaScript, TypeScript, React.js, Node.js, and Express.js. This intensive 9-month program not only equipped me with a solid technical foundation but also emphasized the development of essential soft-skills, fostering effective collaboration and client satisfaction. 🌟🚀
    
   To deepen my understanding of computer science principles, I pursued the renowned CS50 Computer Science course at Harvard University. This comprehensive program enriched my theoretical knowledge and provided me with a strong foundation in algorithm design, data structures, and problem-solving. 📚🎓
    
@@ -66,7 +66,7 @@ export const aboutTxtPt = {
 
   Minha paixão pela programação começou quando me deparei com vídeos no YouTube, explorando linguagens e tecnologias inovadoras. Insatisfeito com a área de Engenharia Civil, decidi que era hora de buscar um novo desafio.
   
-  Para aprimorar minhas habilidades, embarquei no bootcamp de Desenvolvimento Web FullStack da Driven Education. Durante esse programa intensivo de 9 meses, adquiri habilidades técnicas sólidas em tecnologias como HTML/CSS, Javascript, Typescript, React.js, Node.js, Express.js, entre outras. Além disso, o bootcamp enfatizou o desenvolvimento de competências interpessoais, reconhecendo a importância das soft skills. 🌟💼
+  Para aprimorar minhas habilidades, embarquei na formação intensiva de Desenvolvimento Web FullStack da Driven Education. Durante esse programa intensivo de 9 meses, adquiri habilidades técnicas sólidas em tecnologias como HTML/CSS, Javascript, Typescript, React.js, Node.js, Express.js, entre outras. Além disso, a formação enfatizou o desenvolvimento de competências interpessoais, reconhecendo a importância das soft skills. 🌟💼
   
   Busquei também um conhecimento aprofundado ao participar do curso CS50 - Ciência da Computação, de Harvard, fortalecendo minha base teórica e ampliando meu entendimento sobre os fundamentos da área. 📚🎓
   
