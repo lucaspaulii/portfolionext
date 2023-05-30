@@ -50,9 +50,8 @@ export const aboutTxtEng = {
    The cumulative experience of playing in a competitive environment has truly transformed me into a team player, someone who values collective efforts and collaborates effectively towards achieving shared goals.`,
   problemSolvingTitle: `Problem Solver and Critical Thinker`,
   problemSolvingText: `   During my time at the Civil Engineering degree I was able to develop great habilities in problem solving and critical thinking, having various subjects that taught me how to analyse different aspects of every problem and come up to a different solution for each of them.
-  Having completed all the calculus subjects (calculus 1, 2, 3), my mathematical skills were also put into test, further honing my problem solving, critical and logical thinking habilities.
    
-  It was during that time that I had my first contact with programming, first through a friend who introduced me to Scratch(MIT), where I developed a simple maze game where you couldn't touch the walls or you would go back to the beggining, and second through graduation subjects such as Introduction to Computer Science, where we learned basic principles of programming using Pascal, and Numerical Calculus, where we learned more about algorithms and how to use them to solve problems.`,
+  It was during that time that I had my first contact with programming, first through a friend who introduced me to Scratch(MIT),  and second through graduation subjects such as Introduction to Computer Science, where we learned basic principles of programming using Pascal, and Numerical Calculus, where we learned more about algorithms and how to use them to solve problems.`,
   creativeTitle: `Communicative and Creative`,
   creativeText: `   In the year of 2019 three friends and I decided to start a band, we were unaware of the challenges it would present us, but since then, I have had the privilege of performing on prominent stages, captivating large crowds, writing and releasing my own songs, and creating effective marketing strategies for our releases.
    
@@ -95,22 +94,22 @@ export const projectsTxtEng = {
   musichems:
     "A platform where you can search artists (bands/DJs/solo artists) that are available to perform in a certain location in a certain date, filtered by musical style, and access their profile page to know more about the artist, and then book them for your show!",
   wallet:
-    "A personal wallet to keep track of monthly incomes and outcomes, where you can add values received or spent and see the current ballance",
+    "A personal wallet to keep track of monthly incomes and outcomes, where you can add values received or spent and see the current ballance.",
   drivent:
-    "A whitelabel event website, designed to be specific for each event, where you can enroll (option to be remote or local) and pay for the enrollment. In case the user chooses the local option, the website displays hotel options for the user to choose and book a room. With the hotel booked and the enrollment paid, the user then can enroll on daily activities by choosing them from a calendar. This project was created with a team of 4 developers working under SCRUM agile method using Trello to keep track of tasks",
+    "A whitelabel event website, designed to be specific for each event, where you can enroll (option to be remote or local) and pay for the enrollment. In case the user chooses the local option, the website displays hotel options for the user to choose and book a room. With the hotel booked and the enrollment paid, the user then can enroll on daily activities by choosing them from a calendar. This project was created with a team of 4 developers working under SCRUM agile method using Trello to keep track of tasks.",
   linkr:
-    "A social network to share your favorite links, where you can like, retweet, follow other users and see what's trending. This project was created with a team of 4 developers working under SCRUM agile method, using Trello to keep track of tasks",
+    "A social network to share your favorite links, where you can like, retweet, follow other users and see what's trending. This project was created with a team of 4 developers working under SCRUM agile method, using Trello to keep track of tasks.",
   primafiat:
-    "A Freelancer project for a car retailer store, where there is a frontend only for displaying the car deliveries in the current day, a frontend to populate the database with deliveries, and a backend to persist that insertions into a database",
-  shortly: "A backend project where you can shorten URLs",
+    "A Freelancer project for a car retailer store, where there is a frontend only for displaying the car deliveries in the current day, a frontend to populate the database with deliveries, and a backend to persist that insertions into a database.",
+  shortly: "A backend project where you can shorten URLs.",
   lacopa:
-    "An online store of FIFA World Cup products, where you can search for products by name or categories, add them to cart and finalise your order. This project was created with a team of 2 developers",
+    "An online store of FIFA World Cup products, where you can search for products by name or categories, add them to cart and finalise your order. This project was created with a team of 2 developers.",
   cineflex:
     "A cinema website (front-end only) created using a 3rd party movies API, where you can find a movie, see its description, view the available sessions, the available seats in that session, and then book the seats you want.",
   parrots:
-    "Memory game where you can select the ammount of cards you want to play with, and check your competion time",
+    "Memory game where you can select the ammount of cards you want to play with, and check your competion time.",
   driveneats:
-    "Food delivery website where you can choose your food combo and then the website sends that order to WhatsApp",
+    "Food delivery website where you can choose your food combo and then the website sends that order to WhatsApp.",
 };
 
 export const projectsTxtPt = {
