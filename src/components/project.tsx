@@ -126,7 +126,7 @@ export default function Project(props: project) {
           </div>
         </div>
         <div className="flex justify-center p-4 gap-7 pl-3 items-center text-white w-full h-1/5 bg-indigo-100 bg-opacity-20 rounded-b-lg">
-          <p>Technologies used:</p>
+          <p>{lang === 'en' ? "Technologies used" : "Tecnologias utilizadas"}:</p>
           <div className="flex gap-5 text-2xl">
             {props.technologies.map((tech) => (
               <div className="transition duration-150 hover:scale-125">
@@ -248,7 +248,7 @@ export default function Project(props: project) {
           </div>
         </div>
         <div className="flex justify-center p-4 gap-7 pl-3 items-center text-white w-full h-1/5 bg-indigo-100 bg-opacity-20 rounded-b-lg">
-          <p className="text-xs">Technologies:</p>
+          <p className="text-xs">{lang === "en" ? "Technologies" : "Tecnologias"}:</p>
           <div className="flex gap-2 text-base flex-wrap">
             {props.technologies.map((tech) => (
               <div className="transition duration-150 hover:scale-125">
