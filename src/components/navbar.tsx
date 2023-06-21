@@ -111,6 +111,13 @@ export default function Navbar(params: any) {
         >
           {lang === "en" ? "Projects" : "Projetos"}
         </Link>
+        <Link
+          href="#contact"
+          className="hover:font-extrabold hover:scale-110 active:font-extrabold active:scale-110 transition-all duration-100"
+          onClick={handleScroll}
+        >
+          {lang === "en" ? "Contact" : "Contato"}
+        </Link>
       </div>
     </div>
   );

@@ -81,19 +81,22 @@ export default function EmailInput() {
         className="sm:p-2 p-1 mt-2 font-bold sm:text-xl [text-shadow:_0_1px_6px_var(--tw-shadow-color)] w-1/2 sm:w-1/5 transition-all hover:scale-110 duration-700"
         type="submit"
         value={loading ? "Loading" : lang === "en" ? "Send" : "Enviar"}
-        initial={{ backgroundColor: "rgb(4, 0, 82)", borderRadius:  "15% 50% 20% / 75% 85% 95%"}}
+        initial={{
+          backgroundColor: "rgba(202, 199, 250, 0.568)",
+          borderRadius: "15% 70% 20% / 75% 85% 95%",
+        }}
         animate={{
           backgroundColor: [
-            "rgb(4, 0, 82)",
-            "rgb(10, 0, 155)",
-            "rgb(24, 17, 112)",
-            "rgb(4, 0, 82)",
+            "rgba(202, 199, 250, 0.568)",
+            "rgba(188, 195, 255, 0.568)",
+            "rgba(197, 184, 243, 0.568)",
+            "rgba(202, 199, 250, 0.568)",
           ],
           borderRadius: [
-            "15% 50% 20% / 75% 85% 95%",
+            "35% 70% 60% / 75% 85% 95%",
             "80% 15% 80% / 85% 15% 25%",
             "45% 35% 50% / 55% 85% 65%",
-            "15% 50% 20% / 75% 85% 95%",
+            "35% 70% 60% / 75% 85% 95%",
           ],
         }}
         transition={{

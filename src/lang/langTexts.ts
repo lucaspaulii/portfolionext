@@ -21,7 +21,7 @@ export const mainTxtEng = {
     "and",
 };
 export const mainTxtPt = {
-  welcome: "Oi, Sou o ",
+  welcome: "Oi, sou ",
   welcomeText:
     "e",
 }

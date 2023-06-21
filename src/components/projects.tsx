@@ -128,30 +128,6 @@ export default function Projects() {
             setVideo={setVideo}
           />
           <Project
-            name="Linkr"
-            description={
-              lang === "en" ? projectsTxtEng.linkr : projectsTxtPt.linkr
-            }
-            buttons={{
-              "demo video": lang === "en" ? "ON86VCPCNQ0" : "zmik5uDY1Vg",
-              "front-end repo":
-                "https://github.com/devgalindo/projeto18-linkr-front",
-              "back-end repo":
-                "https://github.com/devgalindo/projeto18-linkr-back",
-            }}
-            technologies={[
-              <SiJavascript />,
-              <SiNodedotjs />,
-              <SiReact />,
-              <SiStyledcomponents />,
-              <SiExpress />,
-              <SiPostgresql />,
-            ]}
-            direction="l"
-            imageDesktopSrc={"/laptop_linkr.png"}
-            setVideo={setVideo}
-          />
-          <Project
             name="Prima Fiat"
             description={
               lang === "en" ? projectsTxtEng.primafiat : projectsTxtPt.primafiat
@@ -173,7 +149,7 @@ export default function Projects() {
               <SiPostgresql />,
               <SiPrisma />,
             ]}
-            direction="r"
+            direction="l"
             imageDesktopSrc={"/laptop_prima_hq.png"}
             setVideo={setVideo}
           />
@@ -195,27 +171,8 @@ export default function Projects() {
               <SiExpress />,
               <SiMongodb />,
             ]}
-            direction="l"
-            imageSmartphoneSrc={"/smartphone_lacopa.png"}
-            setVideo={setVideo}
-          />
-          <Project
-            name="Cineflex"
-            description={
-              lang === "en" ? projectsTxtEng.cineflex : projectsTxtPt.cineflex
-            }
-            buttons={{
-              "demo video": lang === "en" ? "5kwv9E1DZUg" : "euGMmi5WFGM",
-              "front-end repo": "https://github.com/lucaspaulii/cineflex",
-            }}
-            technologies={[
-              <SiJavascript />,
-              <SiReact />,
-              <SiStyledcomponents />,
-            ]}
             direction="r"
-            imageDesktopSrc={"/laptop_cineflex.png"}
-            imageSmartphoneSrc={"/smartphone_cineflex.png"}
+            imageSmartphoneSrc={"/smartphone_lacopa.png"}
             setVideo={setVideo}
           />
         </motion.div>
