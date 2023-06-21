@@ -14,7 +14,7 @@ const Model = () => {
 
 export default function Tree() {
   return (
-    <div className="sm:mt-0 -mt-44 sm:h-full h-[200px]">
+    <div className="sm:mt-0 sm:h-full h-[120px]">
       <Canvas shadows dpr={[1, 2]} camera={{ position: [0, 0, 4], fov: 50 }}>
         <ambientLight intensity={0.2} />
         <spotLight
