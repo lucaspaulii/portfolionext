@@ -17,12 +17,7 @@ import {
   SiRedis,
   SiJest,
   SiGithubactions,
-  SiHtml5,
-  SiCss3,
 } from "react-icons/si";
-import CurrentPage from "@/components/currentPage";
-import NextIcon from "@/components/nextIcon";
-import PrevIcon from "@/components/prevIcon";
 import PageContext from "@/context/pageContext";
 import { useContext, useEffect, useState } from "react";
 import { motion } from "framer-motion";
@@ -42,9 +37,7 @@ export default function Projects() {
   }, []);
 
   return (
-    <main className="h-screen w-screen bg-gradient-to-tr from-blue-900 via-gray-900 to-purple-900 text-white flex flex-col items-center overflow-hidden">
-      <Image src="/bg3.jpg" alt="bg" fill placeholder="blur" priority={true} blurDataURL="/bgblur.png"/>
-      <div className="w-full h-screen overflow-y-scroll overflow-x-hidden sm:scrollbar-track-neutral-600 sm:scrollbar-thumb-gray-950 z-30 scrollbar-none pb-6">
+      <div className="w-full h-fit pb-6">
         <motion.div
           className="w-screen h-fit flex flex-col items-center gap-8 sm:pt-28 pt-[5.5rem] sm:pb-44 pb-5 mb-16 box-border"
           initial={{ translateX: prevPage == "about" ? "70vw" : "-70vw" }}
@@ -185,24 +178,6 @@ export default function Projects() {
             setVideo={setVideo}
           />
           <Project
-            name="Shortly"
-            description={
-              lang === "en" ? projectsTxtEng.shortly : projectsTxtPt.shortly
-            }
-            buttons={{
-              "back-end repo": "https://github.com/lucaspaulii/shortly",
-            }}
-            technologies={[
-              <SiJavascript />,
-              <SiNodedotjs />,
-              <SiReact />,
-              <SiStyledcomponents />,
-              <SiExpress />,
-              <SiPostgresql />,
-            ]}
-            direction="l"
-          />
-          <Project
             name="LaCopa Store"
             description={
               lang === "en" ? projectsTxtEng.lacopa : projectsTxtPt.lacopa
@@ -220,7 +195,7 @@ export default function Projects() {
               <SiExpress />,
               <SiMongodb />,
             ]}
-            direction="r"
+            direction="l"
             imageSmartphoneSrc={"/smartphone_lacopa.png"}
             setVideo={setVideo}
           />
@@ -238,33 +213,13 @@ export default function Projects() {
               <SiReact />,
               <SiStyledcomponents />,
             ]}
-            direction="l"
+            direction="r"
             imageDesktopSrc={"/laptop_cineflex.png"}
             imageSmartphoneSrc={"/smartphone_cineflex.png"}
             setVideo={setVideo}
           />
-          <Project
-            name="Parrots Card Game"
-            description={
-              lang === "en" ? projectsTxtEng.parrots : projectsTxtPt.parrots
-            }
-            buttons={{
-              "demo video": lang === "en" ? "pxgXRf_xgPE" : "_ideXYrOcFM",
-              "front-end repo":
-                "https://github.com/lucaspaulii/ParrotsCardGame",
-            }}
-            technologies={[<SiHtml5 />, <SiCss3 />, <SiJavascript />]}
-            direction="r"
-            imageDesktopSrc={"/laptop_parrots.png"}
-            imageSmartphoneSrc={"/smartphone_parrots.png"}
-            setVideo={setVideo}
-          />
         </motion.div>
-        <NextIcon nextPage="skills" />
-        <PrevIcon prevPage="about" />
-        <CurrentPage currentPage="projects" />
-      </div>
-      {video && <VideoModal video={video} setVideo={setVideo} />}
-    </main>
+        {video && <VideoModal video={video} setVideo={setVideo} />}
+      </div>    
   );
 }

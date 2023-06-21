@@ -1,11 +1,8 @@
 "use client";
-import CurrentPage from "@/components/currentPage";
 import PageTitle from "@/components/pageTitle";
-import PrevIcon from "@/components/prevIcon";
 import PageContext from "@/context/pageContext";
 import { useContext, useEffect } from "react";
 import { motion } from "framer-motion";
-import Image from "next/image";
 import EmailInput from "@/components/emailInput";
 import Contacts from "@/components/contacts";
 import LangContext from "@/context/langContext";
@@ -20,10 +17,9 @@ export default function Contact() {
   }, []);
 
   return (
-    <main className="h-screen w-screen bg-gradient-to-tr from-blue-900 via-gray-900 to-purple-900 text-white overflow-hidden">
-      <Image src="/bg3.jpg" alt="bg" fill placeholder="blur" priority={true} blurDataURL="/bgblur.png"/>
+    <div className="h-fit sm:w-2/3 w-full text-white">
       <motion.div
-        className="w-full sm:h-full h-fit sm:pt-28 pt-[5.5rem] box-border ms:overflow-hidden overflow-x-hidden overflow-y-scroll flex flex-col items-center scrollbar-none sm:pb-0 pb-10"
+        className="w-full sm:h-full h-fit sm:pt-28 pt-[5.5rem] box-border ms:overflow-hidden overflow-x-hidden overflow-y-scroll flex flex-col items-center justify-center scrollbar-none sm:pb-0 pb-10"
         initial={{ translateX: prevPage == "skills" ? "70vw" : "0" }}
         animate={{ translateX: "0" }}
         transition={{ delay: 0, duration: 0.2 }}
@@ -32,8 +28,6 @@ export default function Contact() {
         <EmailInput />
         <Contacts />
       </motion.div>
-      <PrevIcon prevPage="skills" />
-      <CurrentPage currentPage="contact" />
-    </main>
+    </div>
   );
 }
