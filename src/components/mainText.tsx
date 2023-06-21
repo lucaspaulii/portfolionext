@@ -22,7 +22,7 @@ export default function MainText() {
               transition={{ delay: 1.0, duration: 0.4 }}
             >
               <h1 className="text-center mb-1 font-extrabold text-gray-100 text-4xl sm:text-[4rem] break-keep [text-shadow:_0_2px_2px_var(--tw-shadow-color)] shadow-[#00000028]">
-                {lang === "en" ? mainTxtEng.welcome : mainTxtPt.welcome}{" "}
+                {lang === "en" ? `${mainTxtEng.welcome}` : mainTxtPt.welcome}{" "}
                 <span className="text-indigo-400">Lucas</span>
               </h1>
               <p className="text-white lg:text-xl sm:text-lg text-sm [text-shadow:_0_2px_2px_var(--tw-shadow-color)] shadow-[#00000028]">

@@ -5,6 +5,7 @@ import MainPicture from "./mainPicture";
 import MainLineMobile from "./MainLineMobile";
 import MainLine from "./MainLine";
 import MainDropdown from "./MainDropdown";
+import Laptop from "./canvas/LaptopCanvas";
 
 export default function MainContent() {
   return (
@@ -15,12 +16,12 @@ export default function MainContent() {
         animate={{ translateX: "0" }}
         transition={{ delay: 0, duration: 0.2 }}
       >
-        <div className="h-full sm:w-3/4 w-5/6 flex items-center flex-col sm:flex-row sm:pt-20 sm:mt-20 mt-6 box-border">
+        <div className="h-full sm:w-3/4 w-5/6 flex items-center flex-col sm:flex-row sm:pt-20 sm:mt-20 mt-14 box-border">
           <MainPicture />
           <MainLine />
           <MainLineMobile />
           <MainText />
-          <Tree />
+          <Laptop />
         </div>
         <MainDropdown />
       </motion.div>

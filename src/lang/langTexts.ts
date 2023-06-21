@@ -29,11 +29,13 @@ export const mainTxtPt = {
 //About
 export const aboutTxtEng = {
   mainText:
-    "I'm a passionate FullStack Web Developer driven by a deep interest in technology. From a YouTube video to a life-changing decision, I embarked on this thrilling journey to master web development. Equipped with expertise in HTML/CSS, JavaScript, React.js, Node.js, and more, I'm well-prepared to take on challenges. While I may lack professional experience, I've dedicated myself to personal projects, crafting responsive websites, interactive applications, and APIs. Beyond coding, I'm a musician and a handball enthusiast, embracing creativity, communication, and collaboration. Let's connect and bring digital solutions to life!",
+    `I'm a passionate FullStack Web Developer driven by a deep interest in technology. From a YouTube video to a life-changing decision, I embarked on this thrilling journey to master web development. Equipped with expertise in HTML/CSS, JavaScript, React.js, Node.js, and more, I'm well-prepared to take on challenges. 
+    Beyond coding, I'm a musician and a handball enthusiast, embracing creativity, communication, and collaboration. Let's connect and bring digital solutions to life!`,
 };
 
 export const aboutTxtPt = {
-  mainText: "Sou um desenvolvedor FullStack apaixonado e movido por um profundo interesse em tecnologia. Desde um vídeo no YouTube até uma decisão que mudou minha vida, embarquei nessa emocionante jornada para dominar o desenvolvimento web. Com habilidades em HTML/CSS, JavaScript, React.js, Node.js e muito mais, estou preparado para enfrentar desafios. Embora possa não ter experiência profissional, dediquei-me a projetos pessoais, criando websites responsivos, aplicações interativas e APIs. Além da programação, sou músico e apaixonado por handebol, valorizando a criatividade, comunicação e colaboração. Vamos nos conectar e dar vida às soluções digitais!"
+  mainText: `Sou um desenvolvedor FullStack apaixonado e movido por um profundo interesse em tecnologia. Desde um vídeo no YouTube até uma decisão que mudou minha vida, embarquei nessa emocionante jornada para dominar o desenvolvimento web. Com habilidades em HTML/CSS, JavaScript, React.js, Node.js e muito mais, estou preparado para enfrentar desafios. 
+  Além da programação, sou músico e apaixonado por handebol, valorizando a criatividade, comunicação e colaboração. Vamos nos conectar e dar vida às soluções digitais!`
 };
 
 //Projects

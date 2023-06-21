@@ -18,6 +18,7 @@ import {
   SiRedis,
   SiStyledcomponents,
   SiTailwindcss,
+  SiThreedotjs,
   SiTypescript,
   SiVuedotjs,
 } from "react-icons/si";
@@ -42,6 +43,7 @@ export default function SkillsContent() {
           <SkillCard name="Next.js" card={<SiNextdotjs />} />
           <SkillCard name="Node.js" card={<SiNodedotjs />} />
           <SkillCard name="React.js" card={<SiReact />} />
+          <SkillCard name="Three.js" card={<SiThreedotjs />} />
           <SkillCard name="HTML" card={<SiHtml5 />} />
           <SkillCard name="CSS" card={<SiCss3 />} />
           <SkillCard name="Express.js" card={<SiExpress />} />
