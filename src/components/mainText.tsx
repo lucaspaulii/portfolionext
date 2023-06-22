@@ -10,22 +10,22 @@ export default function MainText() {
 
     return (
         <motion.div
-            className="sm:h-full h-fit overflow-hidden sm:mt-0 mt-4"
+            className="sm:h-full h-fit overflow-hidden sm:mt-0 mt-4 flex-shrink-0"
             initial={{ width: "0" }}
             animate={{ width: ["0", "fit-content"] }}
             transition={{ delay: 0.3, duration: 0.4 }}
           >
             <motion.div
-              className="mb-5 h-fit w-[110%] sm:p-8 p-1 flex flex-col justify-center items-start z-30 sm:gap-10 gap-4"
+              className="mb-5 h-fit min-h-fit max-h-fit w-[110%] sm:p-8 p-1 flex flex-col justify-center items-start z-30 sm:gap-10 gap-4 flex-shrink-0"
               initial={{ opacity: "0" }}
               animate={{ opacity: "1" }}
               transition={{ delay: 1.0, duration: 0.4 }}
             >
-              <h1 className="text-center mb-1 font-extrabold text-gray-100 text-4xl sm:text-[4rem] break-keep [text-shadow:_0_2px_2px_var(--tw-shadow-color)] shadow-[#00000028]">
+              <h1 className="text-center mb-1 leading-none font-extrabold text-gray-100 text-4xl sm:text-[4rem] break-keep [text-shadow:_0_2px_2px_var(--tw-shadow-color)] shadow-[#00000028]">
                 {lang === "en" ? `${mainTxtEng.welcome}` : mainTxtPt.welcome}{" "}
                 <span className="text-indigo-400">Lucas</span>
               </h1>
-              <p className="text-white lg:text-xl sm:text-lg text-sm [text-shadow:_0_2px_2px_var(--tw-shadow-color)] shadow-[#00000028]">
+              <p className="text-white lg:text-xl sm:text-lg text-sm min-h-fit [text-shadow:_0_2px_2px_var(--tw-shadow-color)] shadow-[#00000028]">
                 FullStack Web Developer.
                 <br /> Front End Developer, React.js{" "}
                 {lang === "en" ? "and" : "e"} Next.js.

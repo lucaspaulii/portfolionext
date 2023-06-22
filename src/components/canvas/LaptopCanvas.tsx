@@ -14,7 +14,7 @@ const Model = () => {
 
 export default function Laptop() {
   return (
-    <div className="sm:mt-0 sm:h-full h-[270px]">
+    <div className="sm:mt-0 sm:h-full max-h-[270px] sm:w-1/3 w-full">
       <Canvas shadows dpr={[1, 2]} camera={{ position: [0, 1, 4], fov: 50, zoom: 12 }}>
         <ambientLight intensity={0.2} />
         <spotLight
@@ -28,7 +28,7 @@ export default function Laptop() {
           <Model />
           <Environment preset="city" />
         </Suspense>
-        <OrbitControls autoRotate rotateSpeed={10} />
+        <OrbitControls autoRotate enableZoom={false} />
       </Canvas>
     </div>
   );

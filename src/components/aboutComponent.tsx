@@ -49,7 +49,7 @@ export default function AboutComponent() {
         }}
       >
         <div className="sm:w-2/3 w-5/6 sm:pl-8 pl-6 pt-8 sm:pb-8 pb-8 pr-4 ml-4 flex flex-col justify-around items-center">
-          <p className="[text-shadow:_1px_2px_2px_var(--tw-shadow-color)] shadow-[#6273d46f] sm:p-14 p-6">
+          <p className="[text-shadow:_1px_2px_2px_var(--tw-shadow-color)] shadow-[#6273d46f] sm:p-14 p-4">
             {lang === "en" ? aboutTxtEng.mainText : aboutTxtPt.mainText}
           </p>
           <motion.div className="sm:text-3xl w-2/5 justify-around text-indigo-800 sm:flex hidden">
@@ -61,7 +61,7 @@ export default function AboutComponent() {
             <GiGamepad />
           </motion.div>
         </div>
-        <motion.div className="sm:h-[600px] h-500px sm:w-1/3 w-1/6 relative rounded-e-xl">
+        <motion.div className="sm:h-[600px] max-h-500px sm:w-1/3 w-1/6 min-w-[75px] relative rounded-e-xl">
           <Image
             src="/aboutimg1-removebg-preview.png"
             alt="Lucas standing"

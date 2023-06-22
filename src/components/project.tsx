@@ -195,7 +195,7 @@ export default function Project(props: project) {
         </div>
       </motion.div>
       <motion.div
-        className="w-[85%] h-fit flex flex-col sm:hidden rounded-lg mt-10 mb-10 min-h-[16rem] shadow-lg"
+        className="w-[85%] h-fit flex flex-col sm:hidden rounded-lg mt-10 mb-10 min-h-[16rem]"
         initial={{
           translateX: props.direction == "r" ? "66vw" : "-74vw",
           opacity: 0,
@@ -203,7 +203,7 @@ export default function Project(props: project) {
         whileInView={{ translateX: 0, opacity: 1 }}
         transition={{ delay: 0.3, duration: 0.5 }}
       >
-        <div className="flex flex-col items-center h-fit min-h-[9rem] w-full bg-white bg-opacity-70 rounded-t-lg mt-20">
+        <div className="flex flex-col items-center h-fit min-h-[9rem] w-full bg-gradient-to-b to-[#aeaefce8] from-[#e4e4ffe8] rounded-tr-[32%] rounded-tl-[11%] mt-20">
           <div className="h-20 w-full flex flex-col items-center">
             {props.imageDesktopSrc && props.imageSmartphoneSrc && (
               <div className="h-full w-full flex items-center justify-center -translate-y-14">
@@ -303,7 +303,7 @@ export default function Project(props: project) {
                   return (
                     <div
                       onClick={() => handleVideo(entry[1])}
-                      className="flex w-fit h-fit p-1 text-sm justify-center items-center rounded-lg bg-white text-black shadow-md"
+                      className="flex w-fit h-fit p-1 text-sm justify-center items-center rounded-lg bg-[rgba(202, 199, 250, 0.568)] text-white shadow-md"
                       key={i}
                     >
                       {entry[0]}
@@ -312,7 +312,7 @@ export default function Project(props: project) {
                 } else {
                   return (
                     <Link href={new URL(`${entry[1]}`)} key={i}>
-                      <div className="flex w-fit h-fit p-1 text-sm justify-center items-center rounded-lg bg-white text-black shadow-md">
+                      <div className="flex w-fit h-fit p-1 text-sm justify-center items-center rounded-lg bg-[rgba(202, 199, 250, 0.568)] text-white shadow-md">
                         {entry[0]}
                       </div>
                     </Link>
@@ -322,7 +322,7 @@ export default function Project(props: project) {
             </div>
           </div>
         </div>
-        <div className="flex justify-center p-4 gap-7 pl-3 items-center text-white w-full h-1/5 bg-indigo-100 bg-opacity-20 rounded-b-lg">
+        <div className="flex justify-center p-4 gap-7 pl-3 items-center text-white w-full h-1/5 bg-indigo-800 bg-opacity-20 rounded-bl-[35%] rounded-br-[50%]">
           <p className="text-xs">
             {lang === "en" ? "Technologies" : "Tecnologias"}:
           </p>

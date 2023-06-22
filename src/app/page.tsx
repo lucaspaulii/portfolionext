@@ -20,7 +20,7 @@ export default function Home() {
 
   return (
     <>
-      <main className="h-screen  w-screen bg-gradient-to-tr from-blue-900 from-10% via-gray-900 via-80% to-blue-950 text-white box-border absolute overflow-y-scroll scrollbar-none">
+      <main className="h-screen w-full bg-gradient-to-tr from-blue-900 from-10% via-gray-900 via-80% to-blue-950 text-white box-border absolute overflow-y-scroll overflow-x-hidden scrollbar-none">
         <div className="relative top-0" id="top"></div>
         <MainContent />
         <motion.div
