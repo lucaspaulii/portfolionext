@@ -32,7 +32,7 @@ export default function SkillsContent() {
   return (
     <div className="w-full flex flex-col justify-center items-center pt-20">
       <motion.div
-        className="flex flex-col h-fit mb-12 mt-8 sm:w-4/5 w-full sm:p-6 p-6 sm:text-base gap-8"
+        className="flex flex-col h-fit mb-12 mt-8 sm:w-4/5 w-full sm:p-6 p-4 sm:text-base gap-8"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.3, duration: 0.4 }}

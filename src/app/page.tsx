@@ -22,7 +22,7 @@ export default function Home() {
     const container = document.querySelector("main") as HTMLElement;
     setInterval(() => setWindowHeight(container.clientHeight), 5000);
     const handleScroll = () => {
-      setScrollPosition(window.scrollY)
+      setScrollPosition(window.scrollY);
     };
     window.addEventListener("scroll", handleScroll, false);
     return () => container.removeEventListener("scroll", handleScroll);
@@ -30,20 +30,17 @@ export default function Home() {
 
   return (
     <>
-      <Navbar scrollPosition={scrollPosition}/>
+      <Navbar scrollPosition={scrollPosition} />
       <main className="w-full z-20 bg-gradient-to-tr from-blue-900 from-10% via-gray-900 via-80% to-blue-950 text-white box-border absolute overflow-y-scroll overflow-x-hidden scrollbar-none">
         <div className="relative top-0" id="top"></div>
-        <Background windowHeight={windowHeight} scrollPosition={scrollPosition}/>
+        <Background
+          windowHeight={windowHeight}
+          scrollPosition={scrollPosition}
+        />
         <MainContent />
         <div className="absolute top-[130vh]" id="about" />
         <div className="w-full h-fit pt-[20rem] z-40">
           <AboutComponent />
-        </div>
-        <div className="w-full h-fit z-40 pt-24" id="experiences">
-          <Experiences />
-        </div>
-        <div className="w-full h-fit z-40 pt-24" id="education">
-          <Education />
         </div>
         <div className="w-full h-fit z-40 pt-24" id="tools">
           <SkillsContent />
@@ -51,6 +48,13 @@ export default function Home() {
         <div className="w-full h-fit z-40 pt-24" id="projects">
           <Projects />
         </div>
+        <div className="w-full h-fit z-40 pt-24" id="experiences">
+          <Experiences />
+        </div>
+        <div className="w-full h-fit z-40 pt-24" id="education">
+          <Education />
+        </div>
+
         <div
           className="w-full h-fit -mt-20 mb-20 flex sm:flex-row flex-col items-start"
           id="contact"

@@ -29,72 +29,64 @@ export default function Project(props: project) {
       <motion.div
         className="w-8/12 h-fit sm:flex sm:flex-col hidden rounded-3xl mt-10 mb-10 min-h-[16rem] z-20"
         initial={{
-          translateX: props.direction == "r" ? "66vw" : "-74vw",
+          translateX: props.direction == "r" ? "20vw" : "-20vw",
           opacity: 0,
         }}
-        whileInView={{ translateX: "4rem", opacity: 1 }}
+        whileInView={{ translateX: "0rem", opacity: 1 }}
         transition={{ delay: 0.3, duration: 0.4 }}
       >
-        <motion.div className="flex h-fit min-h-[9rem] w-full bg-gradient-to-b to-[#aeaefce8] from-[#e4e4ffe8] rounded-tr-[32%] rounded-tl-[11%]"
+        <motion.div className={`flex h-fit min-h-[9rem] w-full bg-gradient-to-b to-[#aeaefce8] from-[#e4e4ffe8] bg-opacity-60 rounded-t-xl ${props.direction == "r" ? "flex-row" : "flex-row-reverse"}`}
         >
-          <div className="h-100 w-1/5 flex items-center">
+          <div className={`h-100 w-1/5 flex items-center ${props.direction == "r" ? "flex-row" : "flex-row-reverse"}`}>
             {props.imageDesktopSrc && props.imageSmartphoneSrc && (
               <div className="h-full w-full flex items-center">
-                <div className="absolute -translate-x-10 scale-[230%] transition duration-150 hover:z-30 hover:scale-[400%]">
+                <div className={`absolute scale-[230%] transition duration-150 hover:z-30 hover:scale-[400%] ${props.direction == "r" ? "-translate-x-10" : "translate-x-10"}`}>
                   <Image
                     src={props.imageDesktopSrc as string}
                     alt="laptop"
                     width={130}
                     height={130}
                     quality={100}
-                    unoptimized
+                    priority
                   />
                 </div>
-                <div className="absolute z-20 translate-x-20 transition duration-150 hover:scale-[300%]">
+                <div className={`absolute z-20  transition duration-150 hover:scale-[300%] ${props.direction == "r" ? "translate-x-20" : "-translate-x-20"}`}>
                   <Image
                     src={props.imageSmartphoneSrc as string}
                     alt="smartphone"
                     width={140}
                     height={140}
                     quality={100}
-                    unoptimized
+                    priority
                   />
                 </div>
               </div>
             )}
             {props.imageDesktopSrc && !props.imageSmartphoneSrc && (
               <div className="h-full w-full flex items-center">
-                <div className="absolute -translate-x-10 scale-[230%] transition duration-150 hover:z-30 hover:scale-[400%]">
+                <div className={`absolute scale-[230%] transition duration-150 hover:z-30 hover:scale-[400%] ${props.direction == "r" ? "-translate-x-10" : "translate-x-20"}`}>
                   <Image
                     src={props.imageDesktopSrc as string}
                     alt="laptop"
                     width={130}
                     height={130}
                     quality={100}
-                    unoptimized
+                    priority
                   />
                 </div>
               </div>
             )}
             {!props.imageDesktopSrc && props.imageSmartphoneSrc && (
               <div className="h-full w-full flex items-center">
-                <div className="absolute z-20 scale-150 transition duration-150 hover:scale-[300%]">
+                <div className="absolute z-20 scale-150 transition duration-150 hover:scale-[300%] -translate-x-16">
                   <Image
                     src={props.imageSmartphoneSrc as string}
                     alt="smartphone"
                     width={140}
                     height={140}
                     quality={100}
-                    unoptimized
+                    priority
                   />
-                </div>
-              </div>
-            )}
-            {!props.imageDesktopSrc && !props.imageSmartphoneSrc && (
-              <div className="h-5/6 w-5/6 flex items-center -translate-x-20 justify-center bg-indigo-800 border-[6px] border-black hover:scale-110">
-                <div className="z-20 scale-150 transition duration-150 flex flex-col items-center">
-                  <SiNodedotjs className="text-5xl " />
-                  <p>BackEnd project</p>
                 </div>
               </div>
             )}
@@ -104,15 +96,15 @@ export default function Project(props: project) {
               {props.name}
             </h1>
             <p
-              className={` text-center w-full text-base pr-3 ${
-                showMore ? "text-black" : "line-clamp-1 text-gray-600"
+              className={` text-justify w-full text-base ${props.direction == "r" ? "pr-3" : "pl-3"} ${
+                showMore ? "text-gray-700" : "line-clamp-1 text-gray-500"
               } transition-all duration-100`}
             >
               {props.description}
             </p>
             <button
               onClick={handleClick}
-              className={`font-semibold w-full text-right pr-5 mb-4 -mt-2 ${showMore ? "text-gray-600" : "text-black"}`}
+              className={` w-full text-right pr-5 mb-4 -mt-2 ${showMore ? "text-gray-100" : "text-[#ffffff] font-semibold"}`}
             >
               {showMore
                 ? lang === "en"
@@ -130,20 +122,20 @@ export default function Project(props: project) {
                       key={i}
                       onClick={() => handleVideo(entry[1])}
                       className="flex w-36 h-10 justify-center items-center text-white shadow-md transition duration-150 hover:shadow-indigo-950 hover:scale-105"
-                      initial={{ backgroundColor: "rgba(202, 199, 250, 0.568)" }}
+                      initial={{ backgroundColor: "rgba(128, 121, 231, 0.568)" }}
                       animate={{
                         backgroundColor: [
-                          "rgba(202, 199, 250, 0.568)",
-                            "rgba(186, 184, 207, 0.568)",
-                            "rgba(188, 184, 243, 0.568)",
-                            "rgba(202, 199, 250, 0.568)",
+                          "rgba(128, 121, 231, 0.568)",
+                          "rgba(76, 65, 202, 0.568)",
+                          "rgba(86, 80, 170, 0.568)",
+                          "rgba(128, 121, 231, 0.568)",
                         ],
                         borderRadius: ["15% 50% 20% / 75% 85% 95%", "40% 15% 30% / 85% 65% 75%", "45% 35% 50% / 65% 85% 85%", "15% 50% 20% / 75% 85% 95%"]
                       }}
                       transition={{
                         ease: "easeInOut",
                         type: "keyframes",
-                        duration: 7,
+                        duration: 5,
                         repeat: Infinity,
                       }}
                     >
@@ -155,13 +147,13 @@ export default function Project(props: project) {
                     <Link key={i} href={new URL(`${entry[1]}`)}>
                       <motion.div
                         className="flex w-36 h-10 justify-center items-center text-white shadow-md transition duration-150 hover:shadow-indigo-950 hover:scale-105"
-                        initial={{ backgroundColor: "rgba(202, 199, 250, 0.568)" }}
+                        initial={{ backgroundColor: "rgba(128, 121, 231, 0.568)" }}
                         animate={{
                           backgroundColor: [
-                            "rgba(202, 199, 250, 0.568)",
-                            "rgba(186, 184, 207, 0.568)",
-                            "rgba(188, 184, 243, 0.568)",
-                            "rgba(202, 199, 250, 0.568)",
+                            "rgba(128, 121, 231, 0.568)",
+                            "rgba(76, 65, 202, 0.568)",
+                            "rgba(86, 80, 170, 0.568)",
+                            "rgba(128, 121, 231, 0.568)",
                           ],
                           borderRadius: ["15% 50% 20% / 75% 85% 95%", "40% 15% 30% / 85% 65% 75%", "45% 35% 50% / 65% 85% 85%", "15% 50% 20% / 75% 85% 95%"]
                         }}
@@ -181,7 +173,7 @@ export default function Project(props: project) {
             </div>
           </div>
         </motion.div>
-        <div className="flex justify-center p-4 gap-7 pl-3 items-center text-indigo-300 w-full h-1/5 bg-indigo-800 bg-opacity-20 rounded-bl-[35%] rounded-br-[50%]">
+        <div className="flex justify-center p-4 gap-7 pl-3 items-center text-indigo-200 w-full h-1/5 bg-[#8079E7] bg-opacity-90 rounded-bl-[35%] rounded-br-[50%]">
           <p>
             {lang === "en" ? "Technologies used" : "Tecnologias utilizadas"}:
           </p>
@@ -197,13 +189,13 @@ export default function Project(props: project) {
       <motion.div
         className="w-[85%] h-fit flex flex-col sm:hidden rounded-lg mt-10 mb-10 min-h-[16rem] z-20"
         initial={{
-          translateX: props.direction == "r" ? "66vw" : "-74vw",
+          translateX: props.direction == "r" ? "5vw" : "-5vw",
           opacity: 0,
         }}
         whileInView={{ translateX: 0, opacity: 1 }}
-        transition={{ delay: 0.3, duration: 0.5 }}
+        transition={{ delay: 0.3, duration: 0.3 }}
       >
-        <div className="flex flex-col items-center h-fit min-h-[9rem] w-full bg-gradient-to-b to-[#aeaefce8] from-[#e4e4ffe8] rounded-tr-[32%] rounded-tl-[11%] mt-20">
+        <div className="flex flex-col items-center h-fit min-h-[9rem] w-full bg-gradient-to-b to-[#aeaefce8] from-[#e4e4ffe8] bg-opacity-60 rounded-tr-[32%] rounded-tl-[11%] mt-20">
           <div className="h-20 w-full flex flex-col items-center">
             {props.imageDesktopSrc && props.imageSmartphoneSrc && (
               <div className="h-full w-full flex items-center justify-center -translate-y-14">
@@ -279,7 +271,7 @@ export default function Project(props: project) {
               {props.name}
             </h1>
             <p
-              className={` text-center w-full text-sm pr-3 ${
+              className={` text-justify w-full text-sm pr-3 mt-4 ${
                 showMore ? "text-black" : "line-clamp-1 text-gray-600"
               } transition-all duration-100`}
             >
@@ -287,7 +279,7 @@ export default function Project(props: project) {
             </p>
             <button
               onClick={handleClick}
-              className="w-full text-gray-800 font-semibold text-right pr-5 text-sm -mt-1"
+              className="w-full text-gray-100 font-semibold text-right pr-5 text-sm -mt-1"
             >
               {showMore
                 ? lang === "en"
@@ -303,7 +295,7 @@ export default function Project(props: project) {
                   return (
                     <div
                       onClick={() => handleVideo(entry[1])}
-                      className="flex w-fit h-fit p-1 text-sm justify-center items-center rounded-lg bg-[rgba(202, 199, 250, 0.568)] text-white shadow-md"
+                      className="flex w-fit h-fit p-1 text-sm justify-center items-center rounded-lg bg-[#8d87e280] text-white shadow-md wrap max-w-[20%] text-center"
                       key={i}
                     >
                       {entry[0]}
@@ -311,8 +303,8 @@ export default function Project(props: project) {
                   );
                 } else {
                   return (
-                    <Link href={new URL(`${entry[1]}`)} key={i}>
-                      <div className="flex w-fit h-fit p-1 text-sm justify-center items-center rounded-lg bg-[rgba(202, 199, 250, 0.568)] text-white shadow-md">
+                    <Link href={new URL(`${entry[1]}`)} key={i} className="max-w-[30%]">
+                      <div className="flex w-fit h-fit p-1 text-sm justify-center items-center rounded-lg bg-[#8d87e280] text-white shadow-md text-center">
                         {entry[0]}
                       </div>
                     </Link>
@@ -322,7 +314,7 @@ export default function Project(props: project) {
             </div>
           </div>
         </div>
-        <div className="flex justify-center p-4 gap-7 pl-3 items-center text-white w-full h-1/5 bg-indigo-800 bg-opacity-20 rounded-bl-[35%] rounded-br-[50%]">
+        <div className="flex justify-center p-4 gap-7 pl-3 items-center text-white w-full h-1/5 bg-[#8d87dfda] bg-opacity-60 rounded-bl-[35%] rounded-br-[50%]">
           <p className="text-xs">
             {lang === "en" ? "Technologies" : "Tecnologias"}:
           </p>

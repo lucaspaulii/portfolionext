@@ -31,6 +31,10 @@ export const aboutTxtEng = {
   mainText:
     `I'm a passionate FullStack Web Developer driven by a deep interest in technology. From a YouTube video to a life-changing decision, I embarked on this thrilling journey to master web development. Equipped with expertise in HTML/CSS, JavaScript, React.js, Node.js, and more, I'm well-prepared to take on challenges. 
     Beyond coding, I'm a musician and a handball enthusiast, embracing creativity, communication, and collaboration. Let's connect and bring digital solutions to life!`,
+  mainTextMobile: `
+  I'm a passionate FullStack Dev driven by a deep interest in tech. Equipped with HTML/CSS, JavaScript, React.js, Node.js, and more, I'm well-prepared to take on challenges. 
+  Beyond coding, I'm a musician and a handball enthusiast, embracing creativity, communication, and collaboration. Let's connect!
+  `
 };
 
 export const aboutTxtPt = {

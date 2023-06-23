@@ -104,6 +104,20 @@ export default function Navbar({ scrollPosition }: { scrollPosition: number }) {
           {lang === "en" ? navigationTxtEng.about : navigationTxtPt.about}
         </Link>
         <Link
+          href="#projects"
+          className="hover:font-extrabold hover:scale-110 active:font-extrabold active:scale-110 transition-all duration-100"
+          onClick={handleScroll}
+        >
+          {lang === "en" ? "Projects" : "Projetos"}
+        </Link>
+        <Link
+          href="#tools"
+          className="hover:font-extrabold hover:scale-110 active:font-extrabold active:scale-110 transition-all duration-100 sm:block hidden"
+          onClick={handleScroll}
+        >
+          {lang === "en" ? "Technologies" : "Tecnologias"}
+        </Link>
+        <Link
           href="#experiences"
           onClick={handleScroll}
           className="hover:font-extrabold hover:scale-110 active:font-extrabold active:scale-110 transition-all duration-100"
@@ -116,21 +130,7 @@ export default function Navbar({ scrollPosition }: { scrollPosition: number }) {
           onClick={handleScroll}
         >
           {lang === "en" ? "Education" : "Educação"}
-        </Link>
-        <Link
-          href="#tools"
-          className="hover:font-extrabold hover:scale-110 active:font-extrabold active:scale-110 transition-all duration-100"
-          onClick={handleScroll}
-        >
-          {lang === "en" ? "Technologies" : "Tecnologias"}
-        </Link>
-        <Link
-          href="#projects"
-          className="hover:font-extrabold hover:scale-110 active:font-extrabold active:scale-110 transition-all duration-100"
-          onClick={handleScroll}
-        >
-          {lang === "en" ? "Projects" : "Projetos"}
-        </Link>
+        </Link>        
         <Link
           href="#contact"
           className="hover:font-extrabold hover:scale-110 active:font-extrabold active:scale-110 transition-all duration-100"
