@@ -37,7 +37,7 @@ export default function SkillsContent() {
         animate={{ opacity: 1 }}
         transition={{ delay: 0.3, duration: 0.4 }}
       >
-        <div className="h-full w-full flex justify-center items-center text-white p-1 flex-wrap">
+        <div className="h-full w-full flex justify-center items-center text-white p-1 flex-wrap z-20">
           <SkillCard name="TypeScript" card={<SiTypescript />} />
           <SkillCard name="JavaScript" card={<SiJavascript />} />
           <SkillCard name="Next.js" card={<SiNextdotjs />} />

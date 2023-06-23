@@ -37,9 +37,9 @@ export default function Projects() {
   }, []);
 
   return (
-      <div className="w-full h-fit pb-6">
+      <div className="w-full h-fit pb-6 z-20">
         <motion.div
-          className="w-screen h-fit flex flex-col items-center gap-8 sm:pt-28 pt-[5.5rem] sm:pb-44 pb-5 mb-16 box-border"
+          className="w-screen h-fit flex flex-col items-center gap-8 sm:pt-28 pt-[5.5rem] sm:pb-44 pb-5 mb-16 box-border z-20"
           initial={{ translateX: prevPage == "about" ? "70vw" : "-70vw" }}
           animate={{ translateX: "0" }}
           transition={{ delay: 0, duration: 0.2 }}

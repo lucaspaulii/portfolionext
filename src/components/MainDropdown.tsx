@@ -20,7 +20,7 @@ export default function MainDropdown() {
   };
   return (
     <motion.div
-      className="w-full flex justify-center"
+      className="w-full flex justify-center sm:mt-10 mt-52"
       animate={{ translateY: ["0px", "10px", "0px"] }}
       transition={{ ease: "easeInOut", duration: 1, repeat: Infinity }}
     >

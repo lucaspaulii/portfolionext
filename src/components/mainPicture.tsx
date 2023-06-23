@@ -18,11 +18,11 @@ export default function MainPicture() {
       transition={{
         ease: "easeInOut",
         type: "keyframes",
-        duration: 7,
+        duration: 25,
         repeat: Infinity,
       }}
     >
-      <div className="relative sm:w-52 sm:h-52 flex-shrink-0 w-40 h-40">
+      <div className="relative sm:w-52 sm:h-52 flex-shrink-0 w-48 h-48">
         <Image
           src="/lucaspicturefade.png"
           alt="profile picture"

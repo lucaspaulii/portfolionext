@@ -10,7 +10,7 @@ export default function MainText() {
 
     return (
         <motion.div
-            className="sm:h-full h-fit overflow-hidden sm:mt-0 mt-4 flex-shrink-0"
+            className="sm:h-full h-fit overflow-visible sm:mt-0 mt-8 flex-shrink-0 w-fit"
             initial={{ width: "0" }}
             animate={{ width: ["0", "fit-content"] }}
             transition={{ delay: 0.3, duration: 0.4 }}
@@ -21,16 +21,15 @@ export default function MainText() {
               animate={{ opacity: "1" }}
               transition={{ delay: 1.0, duration: 0.4 }}
             >
-              <h1 className="text-center mb-1 leading-none font-extrabold text-gray-100 text-4xl sm:text-[4rem] break-keep [text-shadow:_0_2px_2px_var(--tw-shadow-color)] shadow-[#00000028]">
+              <h1 className="text-center mb-1 leading-none font-extrabold text-gray-100 text-5xl sm:text-[4rem] break-keep [text-shadow:_0_2px_2px_var(--tw-shadow-color)] shadow-[#00000028]">
                 {lang === "en" ? `${mainTxtEng.welcome}` : mainTxtPt.welcome}{" "}
                 <span className="text-indigo-400">Lucas</span>
               </h1>
-              <p className="text-white lg:text-xl sm:text-lg text-sm min-h-fit [text-shadow:_0_2px_2px_var(--tw-shadow-color)] shadow-[#00000028]">
+              <p className="text-white lg:text-xl sm:text-lg text-lg min-h-fit [text-shadow:_0_2px_2px_var(--tw-shadow-color)] shadow-[#00000028]">
                 FullStack Web Developer.
                 <br /> Front End Developer, React.js{" "}
                 {lang === "en" ? "and" : "e"} Next.js.
-                <br /> Back End Developer, Node.js, Express{" "}
-                {lang === "en" ? "and" : "e"} Nest.js.
+                <br /> Back End Developer, Node.js {lang === "en" ? "and" : "e"} Express.
               </p>
               <div className="gap-2 sm:flex hidden">
                 <Link

@@ -6,9 +6,10 @@ import LangContext from "@/context/langContext";
 import { useContext, useEffect, useState } from "react";
 import { navigationTxtEng, navigationTxtPt } from "../lang/langTexts";
 
-export default function Navbar(params: any) {
+export default function Navbar({ scrollPosition }: { scrollPosition: number }) {
   const pathname = usePathname();
   const { setLang, lang } = useContext(LangContext);
+  const [opacity, setOpacity] = useState(0.3);
 
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     e.preventDefault();
@@ -26,9 +27,28 @@ export default function Navbar(params: any) {
     }, 400);
   };
 
+  const handleOpacity = () => {
+    console.log(scrollPosition);
+    if (scrollPosition < 10) {
+      return 0.3;
+    } else if (scrollPosition < 150) {
+      const factor = ((scrollPosition - 10) * 0.005) + 0.3;
+      console.log(factor);
+      return factor;
+    } else {
+      return 1;
+    }
+  };
+
+  useEffect(() => {
+    const newOpacity = handleOpacity();
+    setOpacity(newOpacity);
+  }, [scrollPosition]);
+
   return (
     <div
-      className={`h-20 sm:h-20 w-screen bg-black bg-opacity-30 text-white fixed z-50 top-0 left-0 flex flex-col sm:flex-row justify-between items-center`}
+      className={`h-20 sm:h-20 w-screen text-white fixed z-50 top-0 left-0 flex flex-col sm:flex-row justify-between items-center`}
+      style={{ backgroundColor: `rgba(0, 0, 0, ${opacity})` }}
     >
       <div className="flex gap-5 w-full sm:w-32 justify-between sm:justify-start pt-3 sm:pt-0 pb-2 sm:pb-0">
         <div className="flex gap-5 ml-10">

@@ -27,7 +27,7 @@ export default function Project(props: project) {
   return (
     <>
       <motion.div
-        className="w-8/12 h-fit sm:flex sm:flex-col hidden rounded-3xl mt-10 mb-10 min-h-[16rem]"
+        className="w-8/12 h-fit sm:flex sm:flex-col hidden rounded-3xl mt-10 mb-10 min-h-[16rem] z-20"
         initial={{
           translateX: props.direction == "r" ? "66vw" : "-74vw",
           opacity: 0,
@@ -195,7 +195,7 @@ export default function Project(props: project) {
         </div>
       </motion.div>
       <motion.div
-        className="w-[85%] h-fit flex flex-col sm:hidden rounded-lg mt-10 mb-10 min-h-[16rem]"
+        className="w-[85%] h-fit flex flex-col sm:hidden rounded-lg mt-10 mb-10 min-h-[16rem] z-20"
         initial={{
           translateX: props.direction == "r" ? "66vw" : "-74vw",
           opacity: 0,

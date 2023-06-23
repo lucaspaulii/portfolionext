@@ -1,4 +1,3 @@
-import Navbar from "@/components/navbar";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import { PageProvider } from "@/context/pageContext";
@@ -21,7 +20,6 @@ export default function RootLayout({
       <body className={inter.className}>
         <PageProvider>
           <LangProvider>
-            <Navbar />
             {children}
           </LangProvider>
         </PageProvider>
