@@ -14,7 +14,7 @@ export default function VideoModal(props: modal) {
           animate={{ opacity: 1 }}
           transition={{ delay: 0, duration: 0.4 }}
       ></motion.div>
-      <div className="fixed z-[60] sm:w-1/2 w-full h-1/2 left-auto top-1/4">
+      <div className="fixed z-[60] sm:w-1/2 w-full h-1/2 left-auto sm:left-[25vw] top-1/4">
         {typeof props.video === "string" && (
           <YoutubeVideo embedId={props.video} />
         )}

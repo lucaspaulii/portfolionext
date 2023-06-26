@@ -2,13 +2,13 @@
 import { createContext, useState } from "react";
 
 const PageContext = createContext({
-    pageData: "/",
-    setPageData: (value: string) => {}
+    pageData: 0,
+    setPageData: (value: number) => {}
 });
 export default PageContext;
 
 export function PageProvider({children} : any) {
-    const [pageData, setPageData] = useState("/");
+    const [pageData, setPageData] = useState(0);
 
 
     return (

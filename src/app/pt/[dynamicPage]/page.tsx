@@ -10,7 +10,7 @@ export default function Page() {
     useEffect(() => {
         setLang('pt')
         const redirectPath = pathname.split('/')[2]
-        redirect(redirectPath)
+        redirect(`#${redirectPath}`)
     }, [])
     return <div className="h-full w-full bg-blue-900"></div>
 };

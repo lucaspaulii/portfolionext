@@ -24,23 +24,40 @@ export default function Project(props: project) {
     }
   }
 
+  function handleLoad() {
+    //
+  }
+
   return (
     <>
       <motion.div
         className="w-8/12 h-fit sm:flex sm:flex-col hidden rounded-3xl mt-10 mb-10 min-h-[16rem] z-20"
         initial={{
-          translateX: props.direction == "r" ? "20vw" : "-20vw",
+          translateX: props.direction == "r" ? "10vw" : "-10vw",
           opacity: 0,
         }}
         whileInView={{ translateX: "0rem", opacity: 1 }}
-        transition={{ delay: 0.3, duration: 0.4 }}
+        transition={{ delay: 0.3, duration: 0.2 }}
       >
-        <motion.div className={`flex h-fit min-h-[9rem] w-full bg-gradient-to-b to-[#aeaefce8] from-[#e4e4ffe8] bg-opacity-60 rounded-t-xl ${props.direction == "r" ? "flex-row" : "flex-row-reverse"}`}
+        <motion.div
+          className={`flex h-fit min-h-[9rem] w-full bg-gradient-to-b to-[#aeaefce8] from-[#e4e4ffe8] bg-opacity-60 rounded-t-xl ${
+            props.direction == "r" ? "flex-row" : "flex-row-reverse"
+          }`}
         >
-          <div className={`h-100 w-1/5 flex items-center ${props.direction == "r" ? "flex-row" : "flex-row-reverse"}`}>
+          <div
+            className={`h-100 w-1/5 flex items-center ${
+              props.direction == "r" ? "flex-row" : "flex-row-reverse"
+            }`}
+          >
             {props.imageDesktopSrc && props.imageSmartphoneSrc && (
               <div className="h-full w-full flex items-center">
-                <div className={`absolute scale-[230%] transition duration-150 hover:z-30 hover:scale-[400%] ${props.direction == "r" ? "-translate-x-10" : "translate-x-10"}`}>
+                <div
+                  className={`absolute scale-[230%] transition duration-150 hover:z-30 hover:scale-[400%] ${
+                    props.direction == "r"
+                      ? "-translate-x-10"
+                      : "translate-x-10"
+                  }`}
+                >
                   <Image
                     src={props.imageDesktopSrc as string}
                     alt="laptop"
@@ -48,9 +65,16 @@ export default function Project(props: project) {
                     height={130}
                     quality={100}
                     priority
+                    onLoad={handleLoad}
                   />
                 </div>
-                <div className={`absolute z-20  transition duration-150 hover:scale-[300%] ${props.direction == "r" ? "translate-x-20" : "-translate-x-20"}`}>
+                <div
+                  className={`absolute z-20  transition duration-150 hover:scale-[300%] ${
+                    props.direction == "r"
+                      ? "translate-x-20"
+                      : "-translate-x-20"
+                  }`}
+                >
                   <Image
                     src={props.imageSmartphoneSrc as string}
                     alt="smartphone"
@@ -58,13 +82,20 @@ export default function Project(props: project) {
                     height={140}
                     quality={100}
                     priority
+                    onLoad={handleLoad}
                   />
                 </div>
               </div>
             )}
             {props.imageDesktopSrc && !props.imageSmartphoneSrc && (
               <div className="h-full w-full flex items-center">
-                <div className={`absolute scale-[230%] transition duration-150 hover:z-30 hover:scale-[400%] ${props.direction == "r" ? "-translate-x-10" : "translate-x-20"}`}>
+                <div
+                  className={`absolute scale-[230%] transition duration-150 hover:z-30 hover:scale-[400%] ${
+                    props.direction == "r"
+                      ? "-translate-x-10"
+                      : "translate-x-20"
+                  }`}
+                >
                   <Image
                     src={props.imageDesktopSrc as string}
                     alt="laptop"
@@ -72,6 +103,7 @@ export default function Project(props: project) {
                     height={130}
                     quality={100}
                     priority
+                    onLoad={handleLoad}
                   />
                 </div>
               </div>
@@ -86,6 +118,7 @@ export default function Project(props: project) {
                     height={140}
                     quality={100}
                     priority
+                    onLoad={handleLoad}
                   />
                 </div>
               </div>
@@ -96,7 +129,9 @@ export default function Project(props: project) {
               {props.name}
             </h1>
             <p
-              className={` text-justify w-full text-base ${props.direction == "r" ? "pr-3" : "pl-3"} ${
+              className={` text-justify w-full text-base ${
+                props.direction == "r" ? "pr-3" : "pl-3"
+              } ${
                 showMore ? "text-gray-700" : "line-clamp-1 text-gray-500"
               } transition-all duration-100`}
             >
@@ -104,7 +139,9 @@ export default function Project(props: project) {
             </p>
             <button
               onClick={handleClick}
-              className={` w-full text-right pr-5 mb-4 -mt-2 ${showMore ? "text-gray-100" : "text-[#ffffff] font-semibold"}`}
+              className={` w-full text-right pr-5 mb-4 -mt-2 ${
+                showMore ? "text-gray-100" : "text-[#ffffff] font-semibold"
+              }`}
             >
               {showMore
                 ? lang === "en"
@@ -122,7 +159,9 @@ export default function Project(props: project) {
                       key={i}
                       onClick={() => handleVideo(entry[1])}
                       className="flex w-36 h-10 justify-center items-center text-white shadow-md transition duration-150 hover:shadow-indigo-950 hover:scale-105"
-                      initial={{ backgroundColor: "rgba(128, 121, 231, 0.568)" }}
+                      initial={{
+                        backgroundColor: "rgba(128, 121, 231, 0.568)",
+                      }}
                       animate={{
                         backgroundColor: [
                           "rgba(128, 121, 231, 0.568)",
@@ -130,7 +169,12 @@ export default function Project(props: project) {
                           "rgba(86, 80, 170, 0.568)",
                           "rgba(128, 121, 231, 0.568)",
                         ],
-                        borderRadius: ["15% 50% 20% / 75% 85% 95%", "40% 15% 30% / 85% 65% 75%", "45% 35% 50% / 65% 85% 85%", "15% 50% 20% / 75% 85% 95%"]
+                        borderRadius: [
+                          "15% 50% 20% / 75% 85% 95%",
+                          "40% 15% 30% / 85% 65% 75%",
+                          "45% 35% 50% / 65% 85% 85%",
+                          "15% 50% 20% / 75% 85% 95%",
+                        ],
                       }}
                       transition={{
                         ease: "easeInOut",
@@ -147,7 +191,9 @@ export default function Project(props: project) {
                     <Link key={i} href={new URL(`${entry[1]}`)}>
                       <motion.div
                         className="flex w-36 h-10 justify-center items-center text-white shadow-md transition duration-150 hover:shadow-indigo-950 hover:scale-105"
-                        initial={{ backgroundColor: "rgba(128, 121, 231, 0.568)" }}
+                        initial={{
+                          backgroundColor: "rgba(128, 121, 231, 0.568)",
+                        }}
                         animate={{
                           backgroundColor: [
                             "rgba(128, 121, 231, 0.568)",
@@ -155,7 +201,12 @@ export default function Project(props: project) {
                             "rgba(86, 80, 170, 0.568)",
                             "rgba(128, 121, 231, 0.568)",
                           ],
-                          borderRadius: ["15% 50% 20% / 75% 85% 95%", "40% 15% 30% / 85% 65% 75%", "45% 35% 50% / 65% 85% 85%", "15% 50% 20% / 75% 85% 95%"]
+                          borderRadius: [
+                            "15% 50% 20% / 75% 85% 95%",
+                            "40% 15% 30% / 85% 65% 75%",
+                            "45% 35% 50% / 65% 85% 85%",
+                            "15% 50% 20% / 75% 85% 95%",
+                          ],
                         }}
                         transition={{
                           ease: "easeInOut",
@@ -209,6 +260,7 @@ export default function Project(props: project) {
                     placeholder="blur"
                     blurDataURL="/smartphoneblur.png"
                     priority={true}
+                    onLoad={handleLoad}
                   />
                 </div>
                 <div className="absolute z-20 translate-x-[7.5rem] scale-[110%]">
@@ -221,6 +273,7 @@ export default function Project(props: project) {
                     placeholder="blur"
                     blurDataURL="/smartphoneblur.png"
                     priority={true}
+                    onLoad={handleLoad}
                   />
                 </div>
               </div>
@@ -237,6 +290,7 @@ export default function Project(props: project) {
                     placeholder="blur"
                     blurDataURL="/laptopblur.png"
                     priority={true}
+                    onLoad={handleLoad}
                   />
                 </div>
               </div>
@@ -253,6 +307,7 @@ export default function Project(props: project) {
                     placeholder="blur"
                     blurDataURL="/smartphoneblur.png"
                     priority={true}
+                    onLoad={handleLoad}
                   />
                 </div>
               </div>
@@ -303,7 +358,11 @@ export default function Project(props: project) {
                   );
                 } else {
                   return (
-                    <Link href={new URL(`${entry[1]}`)} key={i} className="max-w-[30%]">
+                    <Link
+                      href={new URL(`${entry[1]}`)}
+                      key={i}
+                      className="max-w-[30%]"
+                    >
                       <div className="flex w-fit h-fit p-1 text-sm justify-center items-center rounded-lg bg-[#8d87e280] text-white shadow-md text-center">
                         {entry[0]}
                       </div>

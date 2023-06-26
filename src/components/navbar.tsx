@@ -16,7 +16,6 @@ export default function Navbar({ scrollPosition }: { scrollPosition: number }) {
     const href = e.currentTarget.href;
     const targetId = href.replace(/.*\#/, "");
     const elem = document.getElementById(targetId);
-    console.log(elem);
     elem?.scrollIntoView({
       behavior: "smooth",
     });
@@ -28,12 +27,10 @@ export default function Navbar({ scrollPosition }: { scrollPosition: number }) {
   };
 
   const handleOpacity = () => {
-    console.log(scrollPosition);
     if (scrollPosition < 10) {
       return 0.3;
     } else if (scrollPosition < 150) {
       const factor = ((scrollPosition - 10) * 0.005) + 0.3;
-      console.log(factor);
       return factor;
     } else {
       return 1;
@@ -102,6 +99,13 @@ export default function Navbar({ scrollPosition }: { scrollPosition: number }) {
           onClick={handleScroll}
         >
           {lang === "en" ? navigationTxtEng.about : navigationTxtPt.about}
+        </Link>    
+        <Link
+          href="#tools"
+          className="hover:font-extrabold hover:scale-110 active:font-extrabold active:scale-110 transition-all duration-100 sm:block hidden"
+          onClick={handleScroll}
+        >
+          {lang === "en" ? "Technologies" : "Tecnologias"}
         </Link>
         <Link
           href="#projects"
@@ -109,13 +113,6 @@ export default function Navbar({ scrollPosition }: { scrollPosition: number }) {
           onClick={handleScroll}
         >
           {lang === "en" ? "Projects" : "Projetos"}
-        </Link>
-        <Link
-          href="#tools"
-          className="hover:font-extrabold hover:scale-110 active:font-extrabold active:scale-110 transition-all duration-100 sm:block hidden"
-          onClick={handleScroll}
-        >
-          {lang === "en" ? "Technologies" : "Tecnologias"}
         </Link>
         <Link
           href="#experiences"

@@ -1,9 +1,7 @@
 import { motion } from "framer-motion";
-import Tree from "./canvas/TreeCanvas";
 import MainText from "./mainText";
 import MainPicture from "./mainPicture";
 import MainDropdown from "./MainDropdown";
-import Laptop from "./canvas/LaptopCanvas";
 
 export default function MainContent() {
   return (

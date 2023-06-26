@@ -1,6 +1,5 @@
 "use client";
-import PageContext from "@/context/pageContext";
-import { useContext, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import SkillsContent from "@/components/skills";
 import Experiences from "@/components/experiences";
 import Education from "@/components/education";
@@ -13,14 +12,12 @@ import Background from "@/components/background";
 import Navbar from "@/components/navbar";
 
 export default function Home() {
-  const { setPageData, pageData } = useContext(PageContext);
   const [windowHeight, setWindowHeight] = useState(0);
   const [scrollPosition, setScrollPosition] = useState(0);
 
   useEffect(() => {
-    setPageData("/");
     const container = document.querySelector("main") as HTMLElement;
-    setInterval(() => setWindowHeight(container.clientHeight), 5000);
+    setInterval(() => setWindowHeight(container.clientHeight), 500);
     const handleScroll = () => {
       setScrollPosition(window.scrollY);
     };
@@ -38,20 +35,19 @@ export default function Home() {
           scrollPosition={scrollPosition}
         />
         <MainContent />
-        <div className="absolute top-[130vh]" id="about" />
-        <div className="w-full h-fit pt-[20rem] z-40">
+        <div className="w-full h-fit mt-[13rem] pt-[7rem] z-40" id="about">
           <AboutComponent />
         </div>
-        <div className="w-full h-fit z-40 pt-24" id="tools">
+        <div className="w-full h-fit z-40 pt-[4rem] mt-[2rem]" id="tools">
           <SkillsContent />
         </div>
-        <div className="w-full h-fit z-40 pt-24" id="projects">
+        <div className="w-full h-fit z-40 pt-[3rem] mt-[3rem]" id="projects">
           <Projects />
         </div>
-        <div className="w-full h-fit z-40 pt-24" id="experiences">
+        <div className="w-full h-fit z-40 pt-[4rem] mt-[2rem]" id="experiences">
           <Experiences />
         </div>
-        <div className="w-full h-fit z-40 pt-24" id="education">
+        <div className="w-full h-fit z-40 pt-[4rem] mt-[2rem]" id="education">
           <Education />
         </div>
 
