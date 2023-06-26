@@ -4,44 +4,164 @@ import Subtitle from "./subtitle";
 import { motion } from "framer-motion";
 import LangContext from "@/context/langContext";
 import { skillsTxtEng, skillsTxtPt } from "@/lang/langTexts";
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
 
 export default function Experiences() {
   const { lang } = useContext(LangContext);
 
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center w-full">
       <Subtitle subtitle={lang === "en" ? "Experiences" : "Experiências"} />
-      <motion.div
-        className="flex flex-col w-full bg-white bg-opacity-60 sm:rounded-lg h-fit sm:p-8 p-8 sm:mt-8 mt-4"
-        initial={{ translateX: "20rem", opacity: 0 }}
-        animate={{ translateX: "0", opacity: 1 }}
-        transition={{ delay: 0.8, duration: 0.2 }}
-      >
-        <Job
-          title={lang === "en" ? skillsTxtEng.experiences.driven.title : skillsTxtPt.experiences.driven.title}
-          company={lang === "en" ? skillsTxtEng.experiences.driven.company : skillsTxtPt.experiences.driven.company}
-          period={lang === "en" ? skillsTxtEng.experiences.driven.period : skillsTxtPt.experiences.driven.period}
-          description={lang === "en" ? skillsTxtEng.experiences.driven.description : skillsTxtPt.experiences.driven.description}
-        />
-        <Job
-          title={lang === "en" ? skillsTxtEng.experiences.lajetrel.title : skillsTxtPt.experiences.lajetrel.title}
-          company={lang === "en" ? skillsTxtEng.experiences.lajetrel.company : skillsTxtPt.experiences.lajetrel.company}
-          period={lang === "en" ? skillsTxtEng.experiences.lajetrel.period : skillsTxtPt.experiences.lajetrel.period}
-          description={lang === "en" ? skillsTxtEng.experiences.lajetrel.description : skillsTxtPt.experiences.lajetrel.description}
-        />
-        <Job
-          title={lang == "en" ? skillsTxtEng.experiences.crestani.title : skillsTxtPt.experiences.crestani.title}
-          company={lang == "en" ? skillsTxtEng.experiences.crestani.company : skillsTxtPt.experiences.crestani.company}
-          period={lang == "en" ? skillsTxtEng.experiences.crestani.period : skillsTxtPt.experiences.crestani.period}
-          description={lang == "en" ? skillsTxtEng.experiences.crestani.description : skillsTxtPt.experiences.crestani.description}
-        />
-        <Job
-          title={lang === "en" ? skillsTxtEng.experiences.concreta.title : skillsTxtPt.experiences.concreta.title}
-          company={lang === "en" ? skillsTxtEng.experiences.concreta.company : skillsTxtPt.experiences.concreta.company}
-          period={lang === "en" ? skillsTxtEng.experiences.concreta.period : skillsTxtPt.experiences.concreta.period}
-          description={lang === "en" ? skillsTxtEng.experiences.concreta.description : skillsTxtPt.experiences.concreta.description}
-        />
-      </motion.div>
+      <div className="flex mt-24 mb-24 sm:w-4/5 w-full">
+        <motion.div className="w-[100%]">
+          <p className="w-full text-center">{
+                lang === "en"
+                  ? "Present"
+                  : "Presente"
+              }</p>
+          <VerticalTimeline
+            lineColor="rgb(129, 140, 248)"
+            className="vertical-timeline-element--work"
+          >
+            <VerticalTimelineElement
+              className="vertical-timeline-element--work"
+              iconStyle={{
+                scale: "30%",
+                background: "white",
+                outline: "5px solid white",
+              }}
+              date={
+                lang === "en"
+                  ? skillsTxtEng.experiences.driven.period
+                  : skillsTxtPt.experiences.driven.period
+              }
+              contentArrowStyle={{ borderRight: "7px solid  white" }}
+              contentStyle={{ background: "#06062ce8" }}
+            >
+              <Job
+                title={
+                  lang === "en"
+                    ? skillsTxtEng.experiences.driven.title
+                    : skillsTxtPt.experiences.driven.title
+                }
+                company={
+                  lang === "en"
+                    ? skillsTxtEng.experiences.driven.company
+                    : skillsTxtPt.experiences.driven.company
+                }
+                description={
+                  lang === "en"
+                    ? skillsTxtEng.experiences.driven.description
+                    : skillsTxtPt.experiences.driven.description
+                }
+              />
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+              className="vertical-timeline-element--work"
+              iconStyle={{
+                scale: "30%",
+                background: "white",
+                outline: "5px solid white",
+              }}
+              date={
+                lang === "en"
+                  ? skillsTxtEng.experiences.lajetrel.period
+                  : skillsTxtPt.experiences.lajetrel.period
+              }
+              contentArrowStyle={{ borderRight: "7px solid  white" }}
+              contentStyle={{ background: "#06062ce8" }}
+            >
+              <Job
+                title={
+                  lang === "en"
+                    ? skillsTxtEng.experiences.lajetrel.title
+                    : skillsTxtPt.experiences.lajetrel.title
+                }
+                company={
+                  lang === "en"
+                    ? skillsTxtEng.experiences.lajetrel.company
+                    : skillsTxtPt.experiences.lajetrel.company
+                }
+                description={
+                  lang === "en"
+                    ? skillsTxtEng.experiences.lajetrel.description
+                    : skillsTxtPt.experiences.lajetrel.description
+                }
+              />
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+              className="vertical-timeline-element--work"
+              iconStyle={{
+                scale: "30%",
+                background: "white",
+                outline: "5px solid white",
+              }}
+              date={
+                lang === "en"
+                  ? skillsTxtEng.experiences.crestani.period
+                  : skillsTxtPt.experiences.crestani.period
+              }
+              contentArrowStyle={{ borderRight: "7px solid  white" }}
+              contentStyle={{ background: "#06062ce8" }}
+            >
+              <Job
+                title={
+                  lang == "en"
+                    ? skillsTxtEng.experiences.crestani.title
+                    : skillsTxtPt.experiences.crestani.title
+                }
+                company={
+                  lang == "en"
+                    ? skillsTxtEng.experiences.crestani.company
+                    : skillsTxtPt.experiences.crestani.company
+                }
+                description={
+                  lang == "en"
+                    ? skillsTxtEng.experiences.crestani.description
+                    : skillsTxtPt.experiences.crestani.description
+                }
+              />
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+              className="vertical-timeline-element--work"
+              iconStyle={{
+                scale: "30%",
+                background: "white",
+                outline: "5px solid white",
+              }}
+              date={
+                lang === "en"
+                  ? skillsTxtEng.experiences.concreta.period
+                  : skillsTxtPt.experiences.concreta.period
+              }
+              contentArrowStyle={{ borderRight: "7px solid  white" }}
+              contentStyle={{ background: "#06062ce8" }}
+            >
+              <Job
+                title={
+                  lang === "en"
+                    ? skillsTxtEng.experiences.concreta.title
+                    : skillsTxtPt.experiences.concreta.title
+                }
+                company={
+                  lang === "en"
+                    ? skillsTxtEng.experiences.concreta.company
+                    : skillsTxtPt.experiences.concreta.company
+                }
+                description={
+                  lang === "en"
+                    ? skillsTxtEng.experiences.concreta.description
+                    : skillsTxtPt.experiences.concreta.description
+                }
+              />
+            </VerticalTimelineElement>
+          </VerticalTimeline>
+        </motion.div>
+      </div>
     </div>
   );
 }

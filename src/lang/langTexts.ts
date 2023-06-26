@@ -16,76 +16,30 @@ export const navigationTxtPt = {
 
 //Home
 export const mainTxtEng = {
-  welcome: "WELCOME!",
+  welcome: "Hi, I'm ",
   welcomeText:
-    "Hi, my name is Lucas. I'm a FullStack Web Developer and this is my portfolio website. This website was created using Next.js TypeScript and Tailwind CSS, and it's designed to make you understand a bit more about who I am, who I was, what I've done, why I'm here and where I wanna go!",
-    welcomeTextMobile:
-    "Hi, my name is Lucas. I'm a FullStack Web Developer and this is my portfolio website. This website is designed to make you understand a bit more about who I am, who I was, what I've done, why I'm here and where I wanna go!",
+    "and",
 };
 export const mainTxtPt = {
-  welcome: "Bem Vindo!",
+  welcome: "Oi, sou ",
   welcomeText:
-    "Olá, meu nome é Lucas, um Desenvolvedor Web FullStack e esse é meu site portfólio. Esse site foi desenvolvido usando Next.js, TypeScript e Tailwind CSS, e foi pensado para que você entenda um pouquinho melhor sobre quem eu sou, quem eu era, o que eu já fiz, porque estou aqui, e onde quero chegar!",
-    welcomeTextMobile:
-    "Olá, meu nome é Lucas, um Desenvolvedor Web FullStack e esse é meu site portfólio. Esse site foi pensado para que você entenda um pouquinho melhor sobre quem eu sou, quem eu era, o que eu já fiz, porque estou aqui, e onde quero chegar!",
-};
+    "e",
+}
 
 //About
 export const aboutTxtEng = {
-  mainText: `   Hello! I'm Lucas, a 27 years old, brazilian FullStack Web Developer with a love for technology and the world of software. 💻✨
-
-  My journey in programming began when I stumbled upon YouTube videos exploring innovative languages and technologies. Dissatisfied with the field of Civil Engineering, I made a bold decision to pursue a new challenge in web development.
-   
-  To continuously enhance my skills, I enrolled in the Driven Education FullStack Web Development intensive program, where I honed my expertise in technologies such as HTML/CSS, JavaScript, TypeScript, React.js, Node.js, and Express.js. This intensive 9-month program not only equipped me with a solid technical foundation but also emphasized the development of essential soft-skills, fostering effective collaboration and client satisfaction. 🌟🚀
-   
-  To deepen my understanding of computer science principles, I pursued the renowned CS50 Computer Science course at Harvard University. This comprehensive program enriched my theoretical knowledge and provided me with a strong foundation in algorithm design, data structures, and problem-solving. 📚🎓
-   
-  Throughout my journey as a web developer, while I may not have professional experience in the industry yet, I have dedicated myself to personal projects that showcase my skills and commitment to growth. These projects include building responsive websites, creating interactive web applications, and APIs to provide data for those applications, where I've applied my knowledge in technologies such as HTML/CSS, JavaScript, React.js, and Node.js. 💻✨
-   
-  Beyond my professional endeavors, I'm a passionate musician, having served as the lead singer in a band. This experience allowed me to cultivate strong communication skills, adaptability, and creativity, qualities that seamlessly translate into my work as a developer. 🎤🎶 Moreover, my active participation in various handball teams has instilled in me a competitive spirit, discipline, and a relentless drive to excel in a collaborative environment. 🤾‍♂️🏆`,
-  teamTitle: `Team Player`,
-  teamText: `   Since the age of 15, I have been involved in various handball teams, starting with my city's team, where I had the opportunity to participate in state championships and travel extensively throughout the southern region of Brazil. These experiences played a significant role in shaping my individuality as I had to take care of myself during these trips, often spending up to a week in unfamiliar places facing the pressure to deliver results.
-  
-  Upon turning 18, I enrolled at the Federal University of Santa Catarina (UFSC) and joined the university's handball team. I actively participated in state college competitions, further honing my skills and teamwork abilities.
-   The cumulative experience of playing in a competitive environment has truly transformed me into a team player, someone who values collective efforts and collaborates effectively towards achieving shared goals.`,
-  problemSolvingTitle: `Problem Solver and Critical Thinker`,
-  problemSolvingText: `   During my time at the Civil Engineering degree I was able to develop great habilities in problem solving and critical thinking, having various subjects that taught me how to analyse different aspects of every problem and come up to a different solution for each of them.
-   
-  It was during that time that I had my first contact with programming, first through a friend who introduced me to Scratch(MIT),  and second through graduation subjects such as Introduction to Computer Science, where we learned basic principles of programming using Pascal, and Numerical Calculus, where we learned more about algorithms and how to use them to solve problems.`,
-  creativeTitle: `Communicative and Creative`,
-  creativeText: `   In the year of 2019 three friends and I decided to start a band, we were unaware of the challenges it would present us, but since then, I have had the privilege of performing on prominent stages, captivating large crowds, writing and releasing my own songs, and creating effective marketing strategies for our releases.
-   
-  The opportunity to perform in front of diverse audiences has honed my ability to communicate effectively in public. I have developed a natural knack for capturing attention and connecting with people. These experiences have fostered my confidence and strengthened my public speaking skills, enabling me to engage and resonate with listeners.
-   Songwriting made me a more creative person, having to figure out melodies and think of them in a way they transmitted the feelings I wanted them to, combining with the lyrics in a way both made sense.
-  
-   The release of our songs has prompted strategic thinking and resourcefulness. With limited funding (as we were all college students), we had to devise marketing strategies that would maximize our reach. Despite the financial constraints, we achieved remarkable success, garnering an impressive 166,000 streams on Spotify for one of our songs. Collectively, our four songs amassed over 260,000 streams, and our music found its way to numerous radio stations across Brazil.`,
+  mainText:
+    `I'm a passionate FullStack Web Developer driven by a deep interest in technology. From a YouTube video to a life-changing decision, I embarked on this thrilling journey to master web development. Equipped with expertise in HTML/CSS, JavaScript, React.js, Node.js, and more, I'm well-prepared to take on challenges. 
+    Beyond coding, I'm a musician and a handball enthusiast, embracing creativity, communication, and collaboration. Let's connect and bring digital solutions to life!`,
+  mainTextMobile: `
+  I'm a passionate FullStack Dev driven by a deep interest in tech. Equipped with HTML/CSS, JavaScript, React.js, Node.js, and more, I'm well-prepared to take on challenges. 
+  Beyond coding, I'm a musician and a handball enthusiast, embracing creativity, communication, and collaboration. Let's connect!
+  `
 };
 
 export const aboutTxtPt = {
-  mainText: `Olá! Sou Lucas, um Desenvolvedor Web FullStack apaixonado pela tecnologia e pelo mundo do software. 💻✨
-
-  Minha paixão pela programação começou quando me deparei com vídeos no YouTube, explorando linguagens e tecnologias inovadoras. Insatisfeito com a área de Engenharia Civil, decidi que era hora de buscar um novo desafio.
-  
-  Para aprimorar minhas habilidades, embarquei na formação intensiva de Desenvolvimento Web FullStack da Driven Education. Durante esse programa intensivo de 9 meses, adquiri habilidades técnicas sólidas em tecnologias como HTML/CSS, Javascript, Typescript, React.js, Node.js, Express.js, entre outras. Além disso, a formação enfatizou o desenvolvimento de competências interpessoais, reconhecendo a importância das soft skills. 🌟💼
-  
-  Busquei também um conhecimento aprofundado ao participar do curso CS50 - Ciência da Computação, de Harvard, fortalecendo minha base teórica e ampliando meu entendimento sobre os fundamentos da área. 📚🎓
-  
-  Como um apaixonado por música, tive a oportunidade de ser vocalista de uma banda, desenvolvendo habilidades de comunicação e criatividade. 🎤🎶 Além disso, minha participação em diversas equipes de handebol me proporcionou motivação, disciplina e uma forte capacidade de trabalho em equipe. 🤾‍♂️🏆`,
-  teamTitle: "Trabalho em Equipe",
-  teamText: `Desde meus 15 anos participei de várias equipes de handebol, começando com a equipe da minha cidade, onde tive a oportunidade de participar de campeonatos regionais e estaduais e viajar com a equipe por diversas cidades da região sul do Brasil. Essas experiências tiveram um papel significativo na formação da minha individualidade, já que eu precisava cuidar de mim mesmo durante essas viagens, passando frequentemente até uma semana em lugares desconhecidos, enfrentando também a pressão de alcançar resultados nos campeonatos.
-
-  Ao completar 18 anos, ingressei na Universidade Federal de Santa Catarina (UFSC) e me juntei à equipe de handebol. Participei ativamente de competições universitárias estaduais, aprimorando ainda mais minhas habilidades e capacidades de trabalho em equipe. A experiência de jogar em um ambiente competitivo desde cedo realmente me transformou em um bom trabalhador em equipe, alguém que valoriza os esforços coletivos e colabora de forma eficaz para alcançar objetivos em comum.`,
-  problemSolvingTitle: "Solução de Problemas",
-  problemSolvingText: `Durante meu curso de Engenharia Civil, pude desenvolver habilidades em resolução de problemas, pensamento crítico e lógico, tendo várias disciplinas que me ensinaram a analisar diferentes aspectos de cada problema e encontrar soluções distintas para cada um deles.
-  
-  Foi durante esse período que tive meu primeiro contato com a programação. Primeiro através de um amigo que me apresentou o Scratch (MIT), e depois através de disciplinas da graduação, como Introdução à Ciência da Computação, onde aprendemos princípios básicos de programação usando Pascal, e Cálculo Numérico, onde aprendemos mais sobre algoritmos e como usá-los para resolver problemas.`,
-  creativeTitle: "Criatividade e Comunicação",
-  creativeText: `No ano de 2019, eu e mais três amigos decidimos formar uma banda, sem saber dos desafios que nos aguardavam. Desde então, tive o privilégio de me apresentar em palcos importantes, cativando pessoas, escrevendo e lançando minhas próprias músicas, além de criar estratégias de marketing eficazes para nossos lançamentos.
-
-  A oportunidade de me apresentar diante de públicos diversos aprimorou minha habilidade de me comunicar de forma eficaz em público. Desenvolvi uma habilidade natural para captar atenção e me conectar com as pessoas.
-  A composição de músicas me tornou uma pessoa mais criativa, pois precisei encontrar melodias e pensar nelas de forma a transmitir os sentimentos que eu desejava, combinando-as de forma coerente com as letras.
-  
-  O lançamento das nossas músicas me impulsionou a pensar estrategicamente e a ser engenhoso. Com recursos financeiros limitados (já que éramos todos estudantes universitários), tivemos que desenvolver estratégias de marketing que maximizassem nosso alcance. Apesar das restrições financeiras, alcançamos um sucesso notável, acumulando impressionantes 166.000 reproduções no Spotify para uma de nossas músicas. Coletivamente, nossas quatro músicas somaram mais de 260.000 reproduções, e nossa música chegou a várias estações de rádio em todo o Brasil.`,
+  mainText: `Sou um desenvolvedor FullStack apaixonado e movido por um profundo interesse em tecnologia. Desde um vídeo no YouTube até uma decisão que mudou minha vida, embarquei nessa emocionante jornada para dominar o desenvolvimento web. Com habilidades em HTML/CSS, JavaScript, React.js, Node.js e muito mais, estou preparado para enfrentar desafios. 
+  Além da programação, sou músico e apaixonado por handebol, valorizando a criatividade, comunicação e colaboração. Vamos nos conectar e dar vida às soluções digitais!`
 };
 
 //Projects
@@ -152,19 +106,22 @@ A simulação então entrou na próxima fase, onde eu participei de uma equipe t
       title: "Assistente de Engenharia",
       company: "Lajetrel",
       period: "Jun/2021 - Mar/2022",
-      description: "Como Assistente de Engenharia na Lajetrel, fui responsável por preparar orçamentos, realizar projetos e ocasionalmente coordenar a produção e entregas de lajes treliçadas. Essa experiência me permitiu desenvolver habilidades fortes em liderança, organização e tratamento de clientes na posição de fornecedor, compreendendo suas necessidades e integrando-as aos projetos.",
+      description:
+        "Como Assistente de Engenharia na Lajetrel, fui responsável por preparar orçamentos, realizar projetos e ocasionalmente coordenar a produção e entregas de lajes treliçadas. Essa experiência me permitiu desenvolver habilidades fortes em liderança, organização e tratamento de clientes na posição de fornecedor, compreendendo suas necessidades e integrando-as aos projetos.",
     },
     crestani: {
       title: "Elaborador de Propostas de Licitação",
       company: "CRESTANI COMERCIO",
       period: "Jul/2019 - Fev/2021",
-      description: "Como Elaborador de Propostas de Licitação na Crestani Comércio, desenvolvi habilidades sólidas em organização, análise de requisitos e gerenciamento de projetos. Fui responsável por preparar propostas, organizar documentação e criar cronogramas para licitações em serviços de engenharia na região de Palhoça. Adquiri experiência em trabalhar com prazos rigorosos e atender aos requisitos específicos listados nas documentações das licitações.",
+      description:
+        "Como Elaborador de Propostas de Licitação na Crestani Comércio, desenvolvi habilidades sólidas em organização, análise de requisitos e gerenciamento de projetos. Fui responsável por preparar propostas, organizar documentação e criar cronogramas para licitações em serviços de engenharia na região de Palhoça. Adquiri experiência em trabalhar com prazos rigorosos e atender aos requisitos específicos listados nas documentações das licitações.",
     },
     concreta: {
       title: "Orçamentista e Projetista Estagiário",
       company: "Concreta Pré Moldados",
       period: "Mai/2018 - Mai/2019",
-      description: "Como Orçamentista e Projetista Estagiário na Concreta Pré Moldados, conduzi estimativas de custo para galpões pré-moldados e desenvolvi projetos visuais para atender às necessidades dos clientes. Essa experiência me proporcionou uma sólida compreensão de transformar as ideias dos clientes em projetos concretos que superassem suas expectativas.",
+      description:
+        "Como Orçamentista e Projetista Estagiário na Concreta Pré Moldados, conduzi estimativas de custo para galpões pré-moldados e desenvolvi projetos visuais para atender às necessidades dos clientes. Essa experiência me proporcionou uma sólida compreensão de transformar as ideias dos clientes em projetos concretos que superassem suas expectativas.",
     },
   },
   education: {
