@@ -93,35 +93,46 @@ export const projectsTxtPt = {
 export const skillsTxtPt = {
   experiences: {
     driven: {
-      title: "Desenvolvedor Web (Simulação)",
-      company: "Driven Education",
-      period: "Dez/2022 - Mar/2023",
-      description: `Aprendi as particularidades do código legado em quatro semanas de onboarding, desenvolvendo provas de conceito sobre tecnologias com as quais eu não estava familiarizado, em paralelo com a implementação de features utilizando essas mesmas tecnologias. (Typescript, Prisma ORM e testes de integração usando JEST e Supertest).
-A simulação então entrou na próxima fase, onde eu participei de uma equipe trabalhando através de metodologias ágeis (SCRUM) na qual eu fui Scrum Master.
-• Technologies used: 
-  • Back-end: TypeScript, Node.js, Express.js, JEST, Prisma ORM, Redis.
-  • Front-end: React.js, Styled Components, JavaScript`,
+      title: "Desenvolvedor Full Stack (Freelancer)",
+      company: "OZmap",
+      period: "Jun/2022 - Presente",
+      description: `Responsável por atualizar e adicionar novas features a um microserviço em produção. Trabalho no desenvolvimento tanto do front-end quanto do back-end, garantindo o bom funcionamento e aprimoramento da aplicação como um todo.
+      No front-end, utilizo Vue.js, Typescript e ferramentas de geolocalização e mapas. Já no back-end utilizo TypeScript, Node.js, Express.js, e um banco de dados MongoDB.
+      Nesse projeto, atuo como freelancer em colaboração com um desenvolvedor sênior da empresa. Essa parceria assegura a consistência e a qualidade do código, além de proporcionar uma troca de conhecimentos valiosa.
+      Principais responsabilidades:
+      - Atualizar e adicionar novas features ao microserviço existente.
+      - Desenvolver interfaces de usuário intuitivas e atraentes utilizando Vue.js, Typescript e ferramentas de geolocalização e mapas.
+      - Construir e otimizar o back-end como uma API em TypeScript com Node.js e Express.js.
+      - Colaborar com o desenvolvedor sênior para garantir a consistência e a qualidade do código.`,
     },
     lajetrel: {
-      title: "Assistente de Engenharia",
-      company: "Lajetrel",
-      period: "Jun/2021 - Mar/2022",
-      description:
-        "Como Assistente de Engenharia na Lajetrel, fui responsável por preparar orçamentos, realizar projetos e ocasionalmente coordenar a produção e entregas de lajes treliçadas. Essa experiência me permitiu desenvolver habilidades fortes em liderança, organização e tratamento de clientes na posição de fornecedor, compreendendo suas necessidades e integrando-as aos projetos.",
+      title: "Desenvolvedor Full Stack (Freelancer)",
+      company: "Prima FIAT",
+      period: "Mai/2023 - Jun/2023",
+      description: `Um projeto freelancer para uma concessionária de carros, onde há um frontend apenas para exibir as entregas de carros no dia atual, um frontend para popular o banco de dados com as entregas e um backend para persistir essas inserções em um banco de dados.`,
     },
     crestani: {
-      title: "Elaborador de Propostas de Licitação",
-      company: "CRESTANI COMERCIO",
-      period: "Jul/2019 - Fev/2021",
-      description:
-        "Como Elaborador de Propostas de Licitação na Crestani Comércio, desenvolvi habilidades sólidas em organização, análise de requisitos e gerenciamento de projetos. Fui responsável por preparar propostas, organizar documentação e criar cronogramas para licitações em serviços de engenharia na região de Palhoça. Adquiri experiência em trabalhar com prazos rigorosos e atender aos requisitos específicos listados nas documentações das licitações.",
+      title: "Desenvolvedor Full Stack",
+      company: `Driven.t - Gerenciador de Eventos
+      ( Projeto )`,
+      period: "Dez/2022 - Mar/2023",
+      description: `Aprendi as particularidades do código em quatro semanas de onboarding, desenvolvendo provas de conceito sobre tecnologias com as quais eu não estava familiarizado, em paralelo com a implementação de features utilizando essas mesmas tecnologias. (Typescript, Prisma ORM e testes de integração usando JEST e Supertest).
+      O projeto então entrou na próxima fase, onde eu participei de uma equipe trabalhando através de metodologias ágeis (SCRUM) na qual eu fui Scrum Master.
+      • Tecnologias utilizadas: 
+       • Back-end: TypeScript, Node.js, Express.js, JEST, Prisma ORM, Redis.
+       • Front-end: React.js, Styled Components, JavaScript`,
     },
     concreta: {
-      title: "Orçamentista e Projetista Estagiário",
-      company: "Concreta Pré Moldados",
-      period: "Mai/2018 - Mai/2019",
-      description:
-        "Como Orçamentista e Projetista Estagiário na Concreta Pré Moldados, conduzi estimativas de custo para galpões pré-moldados e desenvolvi projetos visuais para atender às necessidades dos clientes. Essa experiência me proporcionou uma sólida compreensão de transformar as ideias dos clientes em projetos concretos que superassem suas expectativas.",
+      title: "Multiplios cargos relacionados à Engenharia Civil",
+      company: "Múltiplas Empresas",
+      period: "Mai/2018 - Mar/2022",
+      description: `- Engenheiro Calculista Assistente na Lajetrel: Preparava estimativas, conduzia trabalhos de projeto e, ocasionalmente, coordenava a produção e entrega de lajes treliçadas. Desenvolvi habilidades de liderança, organização e atendimento ao cliente como fornecedor.
+
+      - Desenvolvedor de Propostas de Licitação na Crestani Comércio: Desenvolvi habilidades sólidas em organização, análise de requisitos e gestão de projetos. Responsável por preparar propostas, organizar documentação e criar cronogramas para licitações de serviços de engenharia na região de Palhoça. Habilidades em trabalhar com prazos apertados e atender aos requisitos específicos listados nos documentos de licitação.
+      
+      - Estagiário de Projeto Estrutural e Orçamentista na Concreta Pré Moldados: Criei projetos arquitetônicos para armazéns pré-moldados e conduzi estimativas de custos. Meu papel envolvia traduzir as necessidades dos clientes em projetos arquitetônicos visualmente atrativos e funcionais. Essa experiência aprimorou minha capacidade de entregar projetos que atendessem às expectativas dos clientes, considerando soluções econômicas.
+      
+      Essas experiências destacam minha proficiência em projeto estrutural, estimativa de custos, coordenação de projetos e relacionamento com clientes na área de engenharia civil. Combinando esse conjunto diversificado de habilidades, fiz a transição para o desenvolvimento web, unindo conhecimento em engenharia a soluções inovadoras.`,
     },
   },
   education: {
@@ -162,35 +173,47 @@ A simulação então entrou na próxima fase, onde eu participei de uma equipe t
 export const skillsTxtEng = {
   experiences: {
     driven: {
-      title: "Web Devleoper (Simulation)",
-      company: "Driven Education",
-      period: "Dec/2022 - Mar/2023",
-      description: `As a Web Developer I learned the particularities of the legacy code in four weeks of onboarding proccess and made P.O.Cs about technologies I wasn't familiar with, in paralel with implementing features using the tech I was learning (Typescript, Prisma ORM and testing using JEST and Supertest). 
-The simulation then entered the next phase, where I had a team working under Agile methodology (SCRUM) and I was the SCRUM master. 
-• Technologies used: 
-  • Back-end: TypeScript, Node.js, Express.js, JEST, Prisma ORM, Redis.
-  • Front-end: React.js, Styled Components, JavaScript`,
+      title: "Full Stack Developer (Freelance)",
+      company: "OZmap",
+      period: "Jun/2023 - Present",
+      description: `Responsible for updating and adding new features to a microservice in production. I work on both front-end and back-end development, ensuring the smooth functioning and enhancement of the application as a whole. 
+      On the front-end, I use Vue.js, Typescript, and geolocation and mapping tools. On the back-end, I use TypeScript, Node.js, Express.js, and a MongoDB database.
+      In this project, I work as a freelancer in collaboration with a senior developer from the company. This partnership ensures code consistency and quality, as well as valuable knowledge exchange. 
+      Key responsibilities: 
+      - Updating and adding new features to the existing microservice. 
+      - Developing intuitive and appealing user interfaces using Vue.js, Typescript, and geolocation and mapping tools. 
+      - Building and optimizing the back-end as a TypeScript API with Node.js and Express.js. 
+      - Collaborating with the senior developer to ensure code consistency and quality.`,
     },
     lajetrel: {
-      title: "Assistant Calculating Engineer",
-      company: "Lajetrel",
-      period: "Jun/2021 - Mar/2022",
+      title: "Full Stack Developer (Freelance)",
+      company: "Prima FIAT",
+      period: "May/2023 - Jun/2023",
       description:
-        "As an Assistant Calculating Engineer at Lajetrel, I prepared estimates, conducted project work, and occasionally coordinated latticed slab production and deliveries. This experience developed my leadership, organizational, and client treatment skills as a supplier.",
+        `A Freelancer project for a car retailer store, where there is a frontend only for displaying the car deliveries in the current day, a frontend to populate the database with deliveries, and a backend to persist that insertions into a database.`,
     },
     crestani: {
-      title: "Bidding Proposal Developer",
-      company: "CRESTANI COMERCIO",
-      period: "Jul/2019 - Feb/2021",
-      description:
-        "As a Bidding Proposal Developer at Crestani Comércio, I developed strong skills in organization, requirements analysis, and project management. I was responsible for preparing proposals, organizing documentation, and creating schedules for engineering service bids in the Palhoça region. I gained experience in working with tight deadlines and meeting the specific requirements listed in the bid documents.",
+      title: "Full Stack Developer",
+      company: `Driven.t - Event Management Website
+      ( Project )`,
+      period: "Dec/2022 - Mar/2023",
+      description: `As a Full-Stack Developer I learned the particularities of the code in four weeks of onboarding proccess and made P.O.Cs about technologies I wasn't familiar with, in paralel with implementing features using the tech I was learning (Typescript, Prisma ORM and testing using JEST and Supertest). 
+      The project then entered the next phase, where I had a team working under Agile methodology (SCRUM) and I was the SCRUM master. 
+      • Technologies used: 
+       • Back-end: TypeScript, Node.js, Express.js, JEST, Prisma ORM, Redis.
+       • Front-end: React.js, Styled Components, JavaScript`,
     },
     concreta: {
-      title: "Structural Desginer and Cost Estimator Intern",
-      company: "Concreta Pre Moldados",
-      period: "May/2018 - May/2019",
-      description:
-        "As an Architectural Design and Cost Estimation Intern at concreta precast, I was responsible for creating architectural designs for precast warehouses and conducting cost estimations. My role involved translating client requirements into visually appealing and functional architectural projects. This experience enhanced my ability to deliver projects that met client expectations while considering cost-effective solutions.",
+      title: "Multiple Jobs related to Civil Engineering",
+      company: "Multiple Companies",
+      period: "May/2018 - Mar/2022",
+      description: `- Assistant Calculating Engineer at Lajetrel: Prepared estimates, conducted project work, and occasionally coordinated latticed slab production and deliveries. Developed leadership, organizational, and client treatment skills as a supplier.
+
+      - Bidding Proposal Developer at Crestani Comércio: Developed strong skills in organization, requirements analysis, and project management. Responsible for preparing proposals, organizing documentation, and creating schedules for engineering service bids in the Palhoça region. Thrived in working with tight deadlines and meeting specific bid requirements.
+      
+      - Structural Designer and Cost Estimator Intern at Concreta Pre Moldados: Created architectural designs for precast warehouses and conducted cost estimations. Translated client requirements into visually appealing and functional architectural projects. Delivered projects that met client expectations while considering cost-effective solutions.
+      
+      These experiences showcase my proficiency in structural design, cost estimation, project coordination, and client relationship management within the civil engineering field. Leveraging this diverse skill set, I have transitioned into web development, combining engineering knowledge with innovative solutions.`,
     },
   },
   education: {

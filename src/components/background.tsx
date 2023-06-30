@@ -25,7 +25,7 @@ export default function Background({
   }, [scrollPosition]);
 
   return (
-    <div className="h-screen w-screen top-0 left-0 z-0 fixed overflow-hidden">
+    <div className="h-screen w-screen top-0 left-0 z-0 fixed overflow-hidden scroll-smooth">
       <div
         className={`w-[5000px] h-full absolute top-0`}
         style={{ right: `-${margin}px` }}
