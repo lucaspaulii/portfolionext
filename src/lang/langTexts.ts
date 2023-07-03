@@ -39,6 +39,8 @@ export const aboutTxtEng = {
 
 export const aboutTxtPt = {
   mainText: `Sou um desenvolvedor FullStack apaixonado e movido por um profundo interesse em tecnologia. Desde um vídeo no YouTube até uma decisão que mudou minha vida, embarquei nessa emocionante jornada para dominar o desenvolvimento web. Com habilidades em HTML/CSS, JavaScript, React.js, Node.js e muito mais, estou preparado para enfrentar desafios. 
+  Além da programação, sou músico e apaixonado por handebol, valorizando a criatividade, comunicação e colaboração. Vamos nos conectar e dar vida às soluções digitais!`,
+  mainTextMobile: `Sou um desenvolvedor FullStack movido por um profundo interesse em tecnologia. Com habilidades em HTML/CSS, JavaScript, React.js, Node.js e muito mais, estou preparado para enfrentar desafios. 
   Além da programação, sou músico e apaixonado por handebol, valorizando a criatividade, comunicação e colaboração. Vamos nos conectar e dar vida às soluções digitais!`
 };
 

@@ -21,11 +21,11 @@ export default function MainText() {
               animate={{ opacity: "1" }}
               transition={{ delay: 1.0, duration: 0.4 }}
             >
-              <h1 className="text-center mb-1 leading-none font-extrabold text-gray-100 text-5xl sm:text-[4rem] break-keep [text-shadow:_0_2px_2px_var(--tw-shadow-color)] shadow-[#00000028]">
+              <h1 className="text-center mb-1 leading-none font-extrabold text-gray-100 text-5xl sm:text-[4rem] break-keep [text-shadow:_0_2px_2px_var(--tw-shadow-color)] tracking-tight shadow-[#00000028]">
                 {lang === "en" ? `${mainTxtEng.welcome}` : mainTxtPt.welcome}{" "}
                 <span className="text-indigo-400">Lucas</span>
               </h1>
-              <p className="text-white lg:text-xl sm:text-lg text-lg min-h-fit [text-shadow:_0_2px_2px_var(--tw-shadow-color)] shadow-[#00000028]">
+              <p className="text-white lg:text-xl sm:text-lg text-sm min-h-fit [text-shadow:_0_2px_2px_var(--tw-shadow-color)] shadow-[#00000028] tracking-tight">
                 FullStack Web Developer.
                 <br /> Front End Developer, React.js{" "}
                 {lang === "en" ? "and" : "e"} Next.js.
