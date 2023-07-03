@@ -16,7 +16,7 @@ export default function AboutContent() {
   const { lang } = useContext(LangContext);
   return (
     <motion.div
-        className="w-4/5 z-20 text-xl text-center sm:flex hidden mt-8 gap-2 bg-[#06062ce8] rounded-xl border-b-4 border-white"
+        className="w-4/5 z-20 text-xl text-justify sm:flex hidden mt-8 gap-2 bg-[#06062ce8] rounded-xl border-b-4 border-white"
         initial={{
           borderRadius: "60% 40% 30% 70% / 60% 30% 70% 40%"
         }}

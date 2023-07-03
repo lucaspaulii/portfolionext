@@ -40,7 +40,7 @@ export default function Project(props: project) {
         transition={{ delay: 0.3, duration: 0.2 }}
       >
         <motion.div
-          className={`flex h-fit min-h-[9rem] w-full bg-gradient-to-b to-[#aeaefce8] from-[#e4e4ffe8] bg-opacity-60 rounded-t-xl ${
+          className={`flex h-fit min-h-[9rem] w-full bg-[#06062cc0] bg-opacity-60 rounded-t-xl ${
             props.direction == "r" ? "flex-row" : "flex-row-reverse"
           }`}
         >
@@ -125,14 +125,14 @@ export default function Project(props: project) {
             )}
           </div>
           <div className="flex flex-col justify-center items-center w-4/5 p-3 gap-3">
-            <h1 className="text-black w-full text-center text-4xl font-extrabold drop-shadow-lg shadow-black mb-4">
+            <h1 className="text-white w-full text-center text-4xl font-extrabold drop-shadow-lg shadow-black mb-4">
               {props.name}
             </h1>
             <p
               className={` text-justify w-full text-base ${
                 props.direction == "r" ? "pr-3" : "pl-3"
               } ${
-                showMore ? "text-gray-700" : "line-clamp-1 text-gray-500"
+                showMore ? "text-white" : "line-clamp-1 text-indigo-300"
               } transition-all duration-100`}
             >
               {props.description}
@@ -140,7 +140,7 @@ export default function Project(props: project) {
             <button
               onClick={handleClick}
               className={` w-full text-right pr-5 mb-4 -mt-2 ${
-                showMore ? "text-gray-100" : "text-[#ffffff] font-semibold"
+                showMore ? "text-gray-400" : "text-[#ffffff] font-semibold"
               }`}
             >
               {showMore
@@ -224,7 +224,7 @@ export default function Project(props: project) {
             </div>
           </div>
         </motion.div>
-        <div className="flex justify-center p-4 gap-7 pl-3 items-center text-indigo-200 w-full h-1/5 bg-[#8079E7] bg-opacity-90 rounded-bl-[35%] rounded-br-[50%]">
+        <div className="flex justify-center p-4 gap-7 pl-3 items-center text-indigo-200 w-full h-1/5 bg-indigo-900 bg-opacity-90 rounded-bl-[35%] rounded-br-[50%]">
           <p>
             {lang === "en" ? "Technologies used" : "Tecnologias utilizadas"}:
           </p>
@@ -322,19 +322,21 @@ export default function Project(props: project) {
             )}
           </div>
           <div className="flex flex-col justify-center items-center w-full pl-1 pr-1 pb-5 pt-5 gap-1">
-            <h1 className="text-black w-full text-center text-2xl font-bold drop-shadow-lg shadow-black">
+            <h1 className="text-[#06062cc0] w-full text-center text-2xl font-bold drop-shadow-lg shadow-black">
               {props.name}
             </h1>
             <p
               className={` text-justify w-full text-sm pr-3 mt-4 ${
-                showMore ? "text-black" : "line-clamp-1 text-gray-600"
+                showMore ? "text-[#06062cc0]" : "line-clamp-1 text-[#06062c70]"
               } transition-all duration-100`}
             >
               {props.description}
             </p>
             <button
               onClick={handleClick}
-              className="w-full text-gray-100 font-semibold text-right pr-5 text-sm -mt-1"
+              className={` w-full text-right pr-5 text-sm -mt-1 ${
+                showMore ? "text-gray-200 mt-1" : "text-[#ffffff] font-semibold"
+              }`}
             >
               {showMore
                 ? lang === "en"

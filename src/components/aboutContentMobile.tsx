@@ -36,9 +36,9 @@ export default function AboutContentMobile() {
           repeat: Infinity,
         }}
       >
-        <div className="w-2/3 pl-6 pb-2 pr-4 ml-4 flex flex-col justify-around items-center">
+        <div className={`w-2/3 pl-6 pb-2 pr-4 ml-4 flex flex-col justify-around items-center`}>
           <p className="[text-shadow:_1px_2px_2px_var(--tw-shadow-color)] shadow-[#6273d46f] break-words overflow-hidden w-full hyphens-auto text-justify">
-            {lang === "en" ? aboutTxtEng.mainTextMobile : aboutTxtPt.mainText}
+            {lang === "en" ? aboutTxtEng.mainTextMobile : aboutTxtPt.mainTextMobile}
           </p>
         </div>
         <motion.div className="h-[300px] max-h-500px w-1/3 min-w-[75px] relative rounded-e-xl border-l-4 border-[#06062cc0] bg-indigo-600 bg-opacity-20">
