@@ -44,13 +44,6 @@ export default function Home() {
         <div className="w-full h-fit z-40 pt-[3rem] mt-[3rem]" id="projects">
           <Projects />
         </div>
-        <div className="w-full h-fit z-40 pt-[4rem] mt-[2rem]" id="experiences">
-          <Experiences />
-        </div>
-        <div className="w-full h-fit z-40 pt-[4rem] mt-[2rem]" id="education">
-          <Education />
-        </div>
-
         <div
           className="w-full h-fit -mt-20 mb-20 flex sm:flex-row flex-col items-start"
           id="contact"

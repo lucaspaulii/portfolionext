@@ -50,78 +50,90 @@ export default function Project(props: project) {
             }`}
           >
             {props.imageDesktopSrc && props.imageSmartphoneSrc && (
-              <div className="h-full w-full flex items-center">
+              <div className="relative h-full w-full flex items-center overflow-visible flex-shrink">
                 <div
-                  className={`absolute scale-[230%] transition duration-150 hover:z-30 hover:scale-[400%] ${
-                    props.direction == "r"
-                      ? "-translate-x-10"
-                      : "translate-x-10"
-                  }`}
+                  className={`absolute top-0 left-0 flex-shrink-0 h-fit w-fit  overflow-visible`}
                 >
-                  <Image
-                    src={props.imageDesktopSrc as string}
-                    alt="laptop"
-                    width={130}
-                    height={130}
-                    quality={100}
-                    priority
-                    onLoad={handleLoad}
-                  />
+                  <div
+                    className={`relative w-[300%] h-[300%] -translate-y-[25%] scale-[50%] hover:z-30 hover:scale-[115%] hover:-translate-x-[30%] transition duration-150 ${
+                      props.direction == "r" ? "-translate-x-[50%]" : ""
+                    }`}
+                  >
+                    <Image
+                      src={props.imageDesktopSrc as string}
+                      alt="laptop"
+                      width={1500}
+                      height={1500}
+                      quality={100}
+                      priority
+                      onLoad={handleLoad}
+                      className="flex-shrink-0"
+                    />
+                  </div>
                 </div>
                 <div
-                  className={`absolute z-20  transition duration-150 hover:scale-[300%] ${
-                    props.direction == "r"
-                      ? "translate-x-20"
-                      : "-translate-x-20"
-                  }`}
+                  className={`absolute top-0 left-0 flex-shrink-0 h-fit w-fit z-20  transition duration-150 overflow-visible`}
                 >
-                  <Image
-                    src={props.imageSmartphoneSrc as string}
-                    alt="smartphone"
-                    width={140}
-                    height={140}
-                    quality={100}
-                    priority
-                    onLoad={handleLoad}
-                  />
+                  <div
+                    className={`relative w-[180%] h-[180%] -translate-y-[22%] scale-[50%] hover:z-30 hover:scale-[115%] hover:-translate-x-[0%] transition duration-150 ${
+                      props.direction == "r" ? "-translate-x-[10%]" : ""
+                    }`}
+                  >
+                    <Image
+                      src={props.imageSmartphoneSrc as string}
+                      alt="smartphone"
+                      width={1200}
+                      height={1200}
+                      quality={100}
+                      priority
+                      onLoad={handleLoad}
+                    />
+                  </div>
                 </div>
               </div>
             )}
             {props.imageDesktopSrc && !props.imageSmartphoneSrc && (
-              <div className="h-full w-full flex items-center">
+              <div
+                className={`absolute top-0 left-0 flex-shrink-0 h-fit w-fit  overflow-visible`}
+              >
                 <div
-                  className={`absolute scale-[230%] transition duration-150 hover:z-30 hover:scale-[400%] ${
-                    props.direction == "r"
-                      ? "-translate-x-10"
-                      : "translate-x-20"
+                  className={`relative w-[150%] h-[150%] -translate-y-[40%] scale-[21%] hover:z-30 hover:scale-[60%] hover:translate-x-[2%] transition duration-150 ${
+                    props.direction == "r" ? "-translate-x-[50%]" : "translate-x-[12%]"
                   }`}
                 >
                   <Image
                     src={props.imageDesktopSrc as string}
                     alt="laptop"
-                    width={130}
-                    height={130}
+                    width={1500}
+                    height={1500}
                     quality={100}
                     priority
                     onLoad={handleLoad}
+                    className="flex-shrink-0"
                   />
                 </div>
               </div>
             )}
             {!props.imageDesktopSrc && props.imageSmartphoneSrc && (
-              <div className="h-full w-full flex items-center">
-                <div className="absolute z-20 scale-150 transition duration-150 hover:scale-[300%] -translate-x-16">
-                  <Image
-                    src={props.imageSmartphoneSrc as string}
-                    alt="smartphone"
-                    width={140}
-                    height={140}
-                    quality={100}
-                    priority
-                    onLoad={handleLoad}
-                  />
-                </div>
+              <div
+              className={`absolute top-0 left-0 flex-shrink-0 h-fit w-fit z-20  transition duration-150 overflow-visible`}
+            >
+              <div
+                className={`relative w-[100%] h-[100%] -translate-y-[40%] scale-[24%] hover:z-30 hover:scale-[60%] hover:-translate-x-[45%] transition duration-150 ${
+                  props.direction == "r" ? "-translate-x-[40%]" : ""
+                }`}
+              >
+                <Image
+                  src={props.imageSmartphoneSrc as string}
+                  alt="smartphone"
+                  width={1200}
+                  height={1200}
+                  quality={100}
+                  priority
+                  onLoad={handleLoad}
+                />
               </div>
+            </div>
             )}
           </div>
           <div className="flex flex-col justify-center items-center w-4/5 p-3 gap-3">

@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import LangContext from "@/context/langContext";
 import { useContext, useEffect, useState } from "react";
 import { navigationTxtEng, navigationTxtPt } from "../lang/langTexts";
+import { HiIdentification } from "react-icons/hi";
 
 export default function Navbar({ scrollPosition }: { scrollPosition: number }) {
   const pathname = usePathname();
@@ -71,6 +72,14 @@ export default function Navbar({ scrollPosition }: { scrollPosition: number }) {
           </p>
         </div>
         <div className="flex justify-end sm:hidden gap-5 mr-10">
+        <Link href="/cv" className="block sm:hidden">
+            <div className="hover:scale-110 hover:cursor-pointer mr-10 relative mb-3">
+              <HiIdentification className="text-white text-3xl absolute left-0 top-0" />
+              <p className="tracking-tighter absolute z-10 left-[1rem] top-[0.4rem] font-extrabold text-xs bg-white rounded p-[0.1rem] text-indigo-800">
+                CV
+              </p>
+            </div>
+          </Link>
           <Link
             href="https://www.linkedin.com/in/lucaspauli/"
             className="block sm:hidden"
@@ -85,7 +94,7 @@ export default function Navbar({ scrollPosition }: { scrollPosition: number }) {
           </Link>
         </div>
       </div>
-      <div className="flex sm:gap-8 sm:mr-10 w-full sm:w-fit sm:justify-end items-center sm:pb-0 pb-3 text-[0.65rem] sm:text-base justify-around">
+      <div className="flex sm:gap-8 sm:mr-10 w-full sm:w-fit sm:justify-end items-center sm:pb-0 pb-3 text-[0.85rem] sm:text-base justify-around">
         <Link
           href="#top"
           className={`hover:font-extrabold hover:scale-110 active:font-extrabold active:scale-110 text-indigo-400 font-extrabold scale-110 transition-all duration-100`}
@@ -113,21 +122,7 @@ export default function Navbar({ scrollPosition }: { scrollPosition: number }) {
           onClick={handleScroll}
         >
           {lang === "en" ? "Projects" : "Projetos"}
-        </Link>
-        <Link
-          href="#experiences"
-          onClick={handleScroll}
-          className="hover:font-extrabold hover:scale-110 active:font-extrabold active:scale-110 transition-all duration-100"
-        >
-          {lang === "en" ? "Experiences" : "Experiência"}
-        </Link>
-        <Link
-          href="#education"
-          className="hover:font-extrabold hover:scale-110 active:font-extrabold active:scale-110 transition-all duration-100"
-          onClick={handleScroll}
-        >
-          {lang === "en" ? "Education" : "Educação"}
-        </Link>        
+        </Link>  
         <Link
           href="#contact"
           className="hover:font-extrabold hover:scale-110 active:font-extrabold active:scale-110 transition-all duration-100"
