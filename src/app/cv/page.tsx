@@ -2,7 +2,7 @@
 import Background from "@/components/background";
 import Link from "next/link";
 import { useContext, useEffect, useState } from "react";
-import { IoMdArrowRoundBack } from "react-icons/io";
+import { IoMdArrowRoundBack, IoMdDownload } from "react-icons/io";
 import "@react-pdf-viewer/core/lib/styles/index.css";
 import LangContext from "@/context/langContext";
 
@@ -39,11 +39,11 @@ export default function CvPage() {
         <div className="flex flex-col items-center justify-center h-full w-screen sm:pt-20 pt-14 pb-32 overflow-hidden box-border">
           <Link
             href="/"
-            className="absolute top-5 left-5 text-5xl z-50 text-white hover:scale-110"
+            className="absolute top-5 left-5 text-5xl z-50 text-white sm:hover:scale-110 sm:scale-100 scale-75"
           >
             <IoMdArrowRoundBack />
           </Link>
-          <div className="text-xl w-fit h-fit flex z-40 gap-10">
+          <div className="text-xl w-fit h-fit flex items-center z-40 gap-10 sm:scale-100 scale-75">
             <button
               className={`text-white p-5 rounded ${
                 selectedCV == "en"
@@ -66,6 +66,20 @@ export default function CvPage() {
             >
               PT
             </button>
+            <a
+              href={
+                selectedCV == "en"
+                  ? "/cvs/CV_Lucas_C_Pauli_ENG.pdf"
+                  : "/cvs/CV_Lucas_C_Pauli_PT.pdf"
+              }
+              download="Lucas C. Pauli - CV"
+              className="block sm:hidden"
+            >
+              <button className="flex sm:hidden justify-around items-center p-1 h-fit gap-1 bg-white rounded bg-opacity-60">
+                Download
+                <IoMdDownload />
+              </button>
+            </a>
           </div>
           <div className="z-40 w-full h-screen flex justify-center mt-10 sm:mb-56">
             <div className="sm:w-[800px] w-full sm:h-[1200px] h-[600px]">
@@ -77,8 +91,9 @@ export default function CvPage() {
                   height="100%"
                 />
               ) : (
-                <iframe
-                  src={`/cvs/CV_Lucas_C_Pauli_PT.pdf#view=fitH&zoom=scale&pagemode=none`}
+                <object
+                  type="application/pdf"
+                  data={`/cvs/CV_Lucas_C_Pauli_PT.pdf#view=fitH&zoom=scale&pagemode=none`}
                   width="100%"
                   height="100%"
                 />
