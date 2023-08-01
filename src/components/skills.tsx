@@ -22,10 +22,11 @@ import {
   SiTypescript,
   SiVuedotjs,
   SiCodereview,
+  SiQuarkus,
 } from "react-icons/si";
 import { BsFillGearFill } from "react-icons/bs";
 import { GiPerspectiveDiceSixFacesRandom } from "react-icons/gi";
-import { TbArrowNarrowRight } from "react-icons/tb";
+import { FaJava } from "react-icons/fa";
 import { MdScreenshotMonitor } from "react-icons/md";
 import { motion } from "framer-motion";
 import LangContext from "@/context/langContext";
@@ -53,6 +54,7 @@ export default function SkillsContent() {
               />
               <SkillCard name="TypeScript" card={<SiTypescript />} />
               <SkillCard name="JavaScript" card={<SiJavascript />} />
+              <SkillCard name="Java" card={<FaJava />}/>
               <SkillCard name="Python" card={<SiPython />} />
             </div>
             <h1 className="sm:hidden block bg-indigo-900 bg-opacity-50 rounded p-1 w-fit">Front-End:</h1>
@@ -77,6 +79,7 @@ export default function SkillsContent() {
               <SkillCard name="PostgreSQL" card={<SiPostgresql />} />
               <SkillCard name="Redis" card={<SiRedis />} />
               <SkillCard name="Prisma ORM" card={<SiPrisma />} />
+              <SkillCard name="Quarkus" card={<SiQuarkus />} />
             </div>
             <h1 className="sm:hidden block bg-indigo-900 bg-opacity-500 rounded p-1 w-fit">{lang == "en" ? "Others:" : "Outros:"}</h1>
             <div className="flex items-center text-white p-1 flex-wrap z-20">
