@@ -83,21 +83,14 @@ export default function CvPage() {
           </div>
           <div className="z-40 w-full h-screen flex justify-center mt-10 sm:mb-56">
             <div className="sm:w-[800px] w-full sm:h-[1200px] h-[600px]">
-              {selectedCV == "en" ? (
+              {
                 <object
                   type="application/pdf"
                   data={`/cvs/CV_Lucas_C_Pauli_ENG.pdf#view=fitH&zoom=scale&pagemode=none`}
                   width="100%"
                   height="100%"
                 />
-              ) : (
-                <object
-                  type="application/pdf"
-                  data={`/cvs/CV_Lucas_C_Pauli_PT.pdf#view=fitH&zoom=scale&pagemode=none`}
-                  width="100%"
-                  height="100%"
-                />
-              )}
+              }
             </div>
           </div>
         </div>
