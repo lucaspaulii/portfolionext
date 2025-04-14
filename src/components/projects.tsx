@@ -38,11 +38,7 @@ useEffect(() => {
   const handleScroll = () => {
     if (!sectionRef.current) return;
 
-    console.log(sectionRef.current.offsetTop);
-
-    setMargin(sectionRef.current.offsetTop)};
-
-  // Add event listener with passive: true for better performance
+  setMargin(sectionRef.current.offsetTop)};
   window.addEventListener('scroll', handleScroll, { passive: true });
   return () => window.removeEventListener('scroll', handleScroll);
 }, []);

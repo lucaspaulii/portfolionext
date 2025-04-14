@@ -9,7 +9,6 @@ export default function MainDropdown() {
     const href = e.currentTarget.href;
     const targetId = href.replace(/.*\#/, "");
     const elem = document.getElementById(targetId);
-    console.log(elem);
     elem?.scrollIntoView({
       behavior: "smooth",
     });

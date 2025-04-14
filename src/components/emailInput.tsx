@@ -19,12 +19,10 @@ export default function EmailInput() {
       )
       .then(
         (result) => {
-          console.log("message sent");
           setLoading(false);
         },
         (error) => {
           setLoading(false);
-          console.log(error.text);
         }
       );
   };
