@@ -1,8 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
 import SkillsContent from "@/components/skills";
-import Experiences from "@/components/experiences";
-import Education from "@/components/education";
 import AboutComponent from "@/components/aboutComponent";
 import Projects from "@/components/projects";
 import Contact from "@/components/Contact";
@@ -28,7 +26,7 @@ export default function Home() {
   return (
     <>
       <Navbar scrollPosition={scrollPosition} />
-      <main className="w-full z-20 bg-gradient-to-tr from-blue-900 from-10% via-gray-900 via-80% to-blue-950 text-white box-border absolute overflow-y-scroll overflow-x-hidden scrollbar-none">
+      <main className="w-full z-20 bg-gradient-to-tr from-blue-900 from-10% via-gray-900 via-80% to-blue-950 text-white box-border absolute sm:overflow-y-visible overflow-y-scroll">
         <div className="relative top-0" id="top"></div>
         <Background
           windowHeight={windowHeight}

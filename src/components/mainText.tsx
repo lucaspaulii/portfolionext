@@ -27,12 +27,12 @@ export default function MainText() {
           <span className="text-indigo-400">Lucas</span>
         </h1>
         <p className="text-white lg:text-xl sm:text-lg text-sm min-h-fit [text-shadow:_0_2px_2px_var(--tw-shadow-color)] shadow-[#00000028] tracking-tight">
-          FullStack Web Developer.
-          <br /> Front End Developer, React.js {lang === "en"
+          FullStack Developer.
+          <br /> Front End Developer: LiveView, React.js {lang === "en"
             ? "and"
             : "e"}{" "}
           Next.js.
-          <br /> Back End Developer, Node.js {lang === "en" ? "and" : "e"}{" "}
+          <br /> Back End Developer: Elixir, Phoenix, Node.js {lang === "en" ? "and" : "e"}{" "}
           Express.
         </p>
         <div className="gap-2 sm:flex hidden sm:items-end">

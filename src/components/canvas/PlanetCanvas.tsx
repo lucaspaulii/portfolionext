@@ -28,7 +28,7 @@ export default function Planet() {
           <Model />
           <Environment preset="city" />
         </Suspense>
-        <OrbitControls autoRotate autoRotateSpeed={3} />
+        <OrbitControls autoRotate autoRotateSpeed={3} enableZoom={false} />
       </Canvas>
     </div>
   );

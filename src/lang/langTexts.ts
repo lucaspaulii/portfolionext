@@ -28,67 +28,58 @@ export const mainTxtPt = {
 
 //About
 export const aboutTxtEng = {
-  mainText:
-    `I'm a passionate FullStack Web Developer driven by a deep interest in technology. From a YouTube video to a life-changing decision, I embarked on this thrilling journey to master web development. Equipped with expertise in HTML/CSS, JavaScript, React.js, Node.js, and more, I'm well-prepared to take on challenges. 
-    Beyond coding, I'm a musician and a handball enthusiast, embracing creativity, communication, and collaboration. Let's connect and bring digital solutions to life!`,
+  mainText:`
+  I'm a passionate Full Stack Web Developer with a deep enthusiasm for technology and problem-solving. What began as curiosity quickly evolved into a career-defining journey. With hands-on experience in Elixir, Phoenix, LiveView, JavaScript, React.js, Node.js, and more, I specialize in building scalable, high-performance applications. 
+  Beyond coding, I'm a musician and a handball enthusiast, bringing creativity, teamwork, and adaptability into everything I do. Let’s connect and transform ideas into powerful digital solutions!
+  `,
   mainTextMobile: `
-  I'm a passionate FullStack Dev driven by a deep interest in tech. Equipped with HTML/CSS, JavaScript, React.js, Node.js, and more, I'm well-prepared to take on challenges. 
-  Beyond coding, I'm a musician and a handball enthusiast, embracing creativity, communication, and collaboration. Let's connect!
+  I'm a passionate Full Stack Web Developer with a deep enthusiasm for technology and problem-solving. What began as curiosity quickly evolved into a career-defining journey. With hands-on experience in Elixir, Phoenix, LiveView, JavaScript, React.js, Node.js, and more, I specialize in building scalable, high-performance applications. 
+  Beyond coding, I'm a musician and a handball enthusiast, bringing creativity, teamwork, and adaptability into everything I do. Let’s connect and transform ideas into powerful digital solutions!
   `
 };
 
 export const aboutTxtPt = {
-  mainText: `Sou um desenvolvedor FullStack apaixonado e movido por um profundo interesse em tecnologia. Desde um vídeo no YouTube até uma decisão que mudou minha vida, embarquei nessa emocionante jornada para dominar o desenvolvimento web. Com habilidades em HTML/CSS, JavaScript, React.js, Node.js e muito mais, estou preparado para enfrentar desafios. 
-  Além da programação, sou músico e apaixonado por handebol, valorizando a criatividade, comunicação e colaboração. Vamos nos conectar e dar vida às soluções digitais!`,
-  mainTextMobile: `Sou um desenvolvedor FullStack movido por um profundo interesse em tecnologia. Com habilidades em HTML/CSS, JavaScript, React.js, Node.js e muito mais, estou preparado para enfrentar desafios. 
-  Além da programação, sou músico e apaixonado por handebol, valorizando a criatividade, comunicação e colaboração. Vamos nos conectar e dar vida às soluções digitais!`
+  mainText: `Sou um desenvolvedor Full Stack apaixonado por tecnologia e por resolver problemas. O que começou como curiosidade logo se transformou em uma jornada que definiu minha carreira. Com experiência prática em Elixir, Phoenix, LiveView, JavaScript, React.js, Node.js e outras tecnologias, desenvolvo aplicações escaláveis e de alto desempenho, sempre focado em gerar impacto real.
+  Além da programação, sou músico e entusiasta do handebol, trazendo criatividade, colaboração e adaptabilidade para tudo o que faço. Adoro trabalhar em equipe e buscar soluções inovadoras. Vamos nos conectar e transformar boas ideias em realidade!`,
+  mainTextMobile: `Sou um desenvolvedor Full Stack apaixonado por tecnologia e por resolver problemas. O que começou como curiosidade logo se transformou em uma jornada que definiu minha carreira. Com experiência prática em Elixir, Phoenix, LiveView, JavaScript, React.js, Node.js e outras tecnologias, desenvolvo aplicações escaláveis e de alto desempenho, sempre focado em gerar impacto real.
+  Além da programação, sou músico e entusiasta do handebol, trazendo criatividade, colaboração e adaptabilidade para tudo o que faço. Adoro trabalhar em equipe e buscar soluções inovadoras. Vamos nos conectar e transformar boas ideias em realidade!`
 };
 
 //Projects
 export const projectsTxtEng = {
   main: "This is a section where I display some of my best projects, created with a variety of technologies and using different methods!",
+  trio_card: 
+    "A virtual prepaid card system handling approvals, refunds, and issuer callbacks. It locks and settles balances during transactions, manages invoices with scheduled Oban jobs, and allows CSV exports via AWS S3. The frontend includes dashboards for cards, purchases, and invoices, with full card and transaction details and category insights.",
+  trio_checkout:
+    "A dynamic, fully customizable checkout solution built with Elixir and Phoenix LiveView. Available as an embeddable iframe or standalone URL, it supports pay-in, pay-out, and onboarding flows using Pix and Open Finance. For onboarding, user data is automatically retrieved after payment—no forms required. The interface is real-time, responsive, and fully brandable with client logos, colors, timeouts, and redirect behavior.",
+  trio:
+    "Landing page for the fintech Trio Payments, built using Next.js integrated with Contentful CMS. The structure is fully component-based, allowing the marketing team to create and update pages using predefined, mapped content blocks, with no developer intervention needed. The website is fully responsive and features smooth animations powered by Framer Motion.",
   musichems:
-    "A platform where you can search artists (bands/DJs/solo artists) that are available to perform in a certain location in a certain date, filtered by musical style, and access their profile page to know more about the artist, and then book them for your show!",
-  wallet:
-    "A personal wallet to keep track of monthly incomes and outcomes, where you can add values received or spent and see the current ballance.",
+    "A personal project designed to connect event organizers with musicians. On Musichems, users can search for artists (bands, DJs, or solo performers) available to perform in a specific location on a selected date. The platform allows filtering by music genre, accessing detailed artist profiles, and booking them directly for gigs or events. Ideal for parties, weddings, or local festivals.",
+  findme:
+    "A freelance project for OZmap, a platform for optical network management. Designed to help providers locate end-users in remote areas with vague addresses, it consists of a white-label microservice built with Node.js and Vue.js. The backend sends SMS messages with a personalized link; when opened, the frontend requests geolocation via the browser's Location API. Users adjust their exact position with a draggable pin on Google Maps. The coordinates are stored and sent to OZmap’s console, improving on-site operations.",
   drivent:
-    "A whitelabel event website, designed to be specific for each event, where you can enroll (option to be remote or local) and pay for the enrollment. In case the user chooses the local option, the website displays hotel options for the user to choose and book a room. With the hotel booked and the enrollment paid, the user then can enroll on daily activities by choosing them from a calendar. This project was created with a team of 4 developers working under SCRUM agile method using Trello to keep track of tasks.",
-  linkr:
-    "A social network to share your favorite links, where you can like, retweet, follow other users and see what's trending. This project was created with a team of 4 developers working under SCRUM agile method, using Trello to keep track of tasks.",
+    "A white-label event management platform tailored for each specific event. It allows users to register for an event (choosing between remote or in-person attendance), make payments, and, if attending in person, select and book hotel accommodations. Once the registration and lodging are confirmed, users can browse and sign up for daily activities via a calendar interface.",
   primafiat:
-    "A Freelancer project for a car retailer store, where there is a frontend only for displaying the car deliveries in the current day, a frontend to populate the database with deliveries, and a backend to persist that insertions into a database.",
-  shortly: "A backend project where you can shorten URLs.",
-  lacopa:
-    "An online store of FIFA World Cup products, where you can search for products by name or categories, add them to cart and finalise your order. This project was created with a team of 2 developers.",
-  cineflex:
-    "A cinema website (front-end only) created using a 3rd party movies API, where you can find a movie, see its description, view the available sessions, the available seats in that session, and then book the seats you want.",
-  parrots:
-    "Memory game where you can select the ammount of cards you want to play with, and check your competion time.",
-  driveneats:
-    "Food delivery website where you can choose your food combo and then the website sends that order to WhatsApp.",
+    "A freelance project developed for a car dealership to streamline daily vehicle deliveries. The system includes two frontend interfaces: one for displaying all scheduled deliveries for the current day, and another for internal use to input delivery data. A custom backend handles and persists all data to a database, ensuring smooth and reliable operations.",
 };
 
 export const projectsTxtPt = {
   main: "Esta é uma seção onde exibo alguns dos meus melhores projetos, criados com diversas tecnologias e métodos!",
+  trio_card:
+    "Sistema de cartão virtual que gerencia aprovações, reembolsos e callbacks do emissor. Controla saldo, faturas com jobs agendados no Oban e exporta CSVs via AWS S3. No frontend, exibe painéis de cartões, compras e faturas com detalhes completos e insights por categoria.",
+  trio_checkout:
+    "Solução de checkout dinâmica e totalmente personalizável, feita com Elixir e Phoenix LiveView. Disponível via iframe ou URL, suporta fluxos de entrada, saída e onboarding com Pix e Open Finance. Nos fluxos de onboarding, os dados do usuário são obtidos automaticamente após o pagamento—sem formulários. A interface é em tempo real, responsiva e com suporte total a branding (logos, cores, tempo de expiração e redirecionamento).",
+  trio:
+    "Landing page da fintech Trio Payments, desenvolvida com Next.js e integrada ao Contentful CMS. O site foi construído com base em blocos de conteúdo pré-definidos e mapeados, permitindo que a equipe de marketing atualize e crie páginas sem depender de desenvolvedores. O layout é totalmente responsivo e conta com animações fluidas feitas com Framer Motion.",
   musichems:
-    "Uma plataforma onde você pode pesquisar artistas (bandas/DJs/artistas solo) disponíveis para se apresentar em um determinado local, em uma determinada data, filtrados por estilo musical, e acessar sua página de perfil para saber mais sobre o artista e, em seguida, contratá-los para o seu show!",
-  wallet:
-    "Uma carteira pessoal para controlar as receitas e despesas mensais, onde você pode adicionar valores recebidos ou gastos e ver o saldo atual.",
+    "Projeto pessoal criado para facilitar a conexão entre contratantes e músicos. No Musichems, é possível buscar artistas disponíveis para tocar em determinada data e cidade, filtrando por estilo musical. Cada artista possui uma página de perfil com informações detalhadas, permitindo que o contratante conheça melhor o trabalho antes de efetuar a reserva para eventos como festas, casamentos ou festivais.",
+  findme:
+    "Projeto freelance desenvolvido para a OZmap, plataforma de gerenciamento de redes ópticas. Criado para ajudar provedores a localizar clientes finais em regiões remotas com endereços vagos. O sistema é um microserviço white-label feito com Node.js e Vue.js. O backend envia um SMS com link personalizado; ao abri-lo, o frontend solicita geolocalização via API do navegador. O usuário ajusta sua posição com um pin no Google Maps. As coordenadas são armazenadas e enviadas ao painel da OZmap, otimizando operações em campo.",
   drivent:
-    "Um site de eventos white label, projetado para ser específico para cada evento, onde você pode se inscrever (opção de ser remoto ou local) e pagar pela inscrição. Caso o usuário escolha a opção local, o site exibe opções de hotéis para o usuário escolher e reservar um quarto. Com o hotel reservado e a inscrição paga, o usuário pode se inscrever em atividades diárias escolhendo-as em um calendário. Este projeto foi criado com uma equipe de 4 desenvolvedores trabalhando sob o método ágil SCRUM usando o Trello para acompanhar as tarefas.",
-  linkr:
-    "Uma rede social para compartilhar seus links favoritos, onde você pode curtir, retuitar e seguir outros usuários e ver o que está em alta. Este projeto foi criado com uma equipe de 4 desenvolvedores trabalhando sob o método ágil SCRUM, usando o Trello para acompanhar as tarefas.",
+    "Plataforma white-label para gestão de eventos, personalizada para cada evento específico. Permite que os usuários se inscrevam (escolhendo entre participação remota ou presencial), realizem o pagamento e, em caso de participação presencial, escolham e reservem hospedagem em hotéis disponíveis. Após a confirmação da inscrição e da reserva, o usuário pode visualizar um calendário com as atividades diárias do evento e se inscrever nas de sua escolha.",
   primafiat:
-    "Um projeto freelancer para uma loja de revenda de carros, onde há um frontend apenas para exibir as entregas de carros no dia atual, um frontend para popular o banco de dados com as entregas e um backend para persistir essas inserções em um banco de dados.",
-  shortly: "Um projeto de backend onde você pode encurtar URLs.",
-  lacopa:
-    "Uma loja online de produtos da Copa do Mundo da FIFA, onde você pode pesquisar produtos por nome ou categorias, adicioná-los ao carrinho e finalizar seu pedido. Este projeto foi criado com uma equipe de 2 desenvolvedores.",
-  cineflex:
-    "Um site de cinema (apenas front-end) criado usando uma API de filmes de terceiros, onde você pode encontrar um filme, ver sua descrição, visualizar as sessões disponíveis, os assentos disponíveis nessa sessão e, em seguida, reservar os assentos desejados.",
-  parrots:
-    "Jogo da memória onde você pode selecionar a quantidade de cartas com as quais deseja jogar e verificar seu tempo de conclusão",
-  driveneats:
-    "Site de entrega de comida onde você pode escolher seu combo de alimentos e, em seguida, o site envia esse pedido para o WhatsApp",
+    "Projeto freelancer desenvolvido para uma concessionária de veículos com foco na organização das entregas diárias. O sistema conta com duas interfaces: uma tela pública que exibe os carros com entrega agendada para o dia atual, e um painel administrativo onde é possível cadastrar novas entregas. Um backend gerencia e salva os dados em banco de forma segura e eficiente."
 };
 
 //Skills
